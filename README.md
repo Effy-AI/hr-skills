@@ -12,7 +12,7 @@ Built by [Effy AI](https://effy.ai).
 | Prompt | What it does | Time |
 | --- | --- | --- |
 | [Document our onboarding process](document-onboarding.md) | Works out how onboarding actually runs here — from your email history and a short interview — then writes it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire. | 15–20 min |
-| [Build an onboarding plan for a new hire](build-an-onboarding-plan.md) | Applies your documented process to one person: full task list with one owner and a date each, welcome email, first-week schedule, draft 30/60/90, documents to copy. Needs the document above to exist first. | 5 min |
+| [Build an onboarding plan for a new hire](build-an-onboarding-plan.md) | Applies your documented process to one person: task list with one owner and a date each, welcome email, first-week schedule, draft 30/60/90, documents to copy. Then pushes it to your tools — Slack lists, Wrike, Monday.com, calendars — after you approve. Needs the document above to exist first. | 5 min |
 | [Analyze our review cycle](analyze-review-cycle.md) | Turns a pile of review files into one leadership report: scores with evidence, themes, calibration and bias flags, and a promotion-ready shortlist capped at 15% of headcount. | 20–30 min |
 | [Build a career track](build-a-career-track.md) | Interviews you, then builds one function's level ladder and competency matrix — including the anti-patterns and sideways moves most frameworks leave blank. | 30–40 min |
 

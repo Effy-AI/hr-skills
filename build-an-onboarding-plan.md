@@ -102,7 +102,8 @@ Everything above, in one place, in this order: hire details · task list · need
 email · first-week schedule · 30/60/90 draft · documents to duplicate.
 
 **Don't create anything in other tools yet.** No calendar invites, no tickets, no emails sent, no
-documents duplicated, no messages to the manager or the new hire. We push after I've reviewed.
+documents duplicated, no messages to the manager or the new hire. Step 8 is the push, and it
+only runs once I've said so.
 
 Finish with two short lists:
 - **Gaps** — every task with no owner, no date, or no link, and every place the documents were
@@ -126,6 +127,85 @@ Open gaps at generation: [number]
 
 If you couldn't read the source documents yourself and I pasted them in, say so on the Sources
 line instead of naming a file path — the pack should be honest about where its inputs came from.
+
+## Step 8 — Push it, once I've approved
+
+**Wait for me to say go.** Not "looks good" in passing — an explicit instruction to push. Until
+then Step 6 stands and nothing gets created anywhere.
+
+### Where it goes
+
+Whatever the process document names — Slack lists, Wrike, Monday.com, Asana, Notion, a
+shared sheet. **Don't pick a tool.** If the document doesn't say where the task list lives, ask me
+once and use my answer. Never default to whichever tool you happen to be connected to.
+
+Before you start, tell me which tools you can actually reach right now and which you can't. For
+anything you can't reach, produce the output in a format I can paste straight into it — a CSV
+with the right column headers for that tool, or the tool's own import format — rather than
+skipping it silently.
+
+### The task list
+
+Create every task from the approved pack. For each one, set:
+
+- **The assignee** — the owner from the pack, resolved to that person's actual account in the
+  tool. If you can't match a name to an account, leave it unassigned and tell me. An unassigned
+  task I know about beats a task assigned to the wrong person.
+- **The due date** — the calculated date from the pack, not the relative offset.
+- **A description** naming which source document the task came from, so anyone opening it can
+  see why it exists.
+
+**Anything still in the "needs an owner" or "gaps" list does not get pushed.** It stays a gap.
+Pushing a task with a guessed owner is the exact failure Step 2 exists to prevent, and it's worse
+here because now it's in a system where it looks official.
+
+### Calendars
+
+Find the calendars of everyone named in the first-week schedule — the manager, the buddy, IT,
+and anyone running an intro meeting.
+
+For each meeting in the schedule: check attendee availability in the relevant week, pick a time
+that works for all of them, and create the invite with the meeting name, attendees, and duration
+from the department document. Put the first-week meetings in the order the schedule sets, not
+just wherever there's a free slot — a tools walkthrough after the first standup is the wrong way
+round.
+
+Also create the manager's recurring 1:1 with the new hire, starting in week one.
+
+Two things to get right:
+
+- **Don't invite the new hire before their account exists.** Their address usually isn't live until
+  IT provisions it. Create the invites without them, list which ones need them added, and tell me
+  when to do it — or add them only if you can confirm the account is already active. An invite
+  bouncing to a personal address on day zero is a bad first impression and a small data leak.
+- **Respect the country.** Check public holidays and the normal working week for [country]
+  before placing anything. A first day scheduled on a public holiday is the kind of error that
+  reaches the new hire.
+
+If you can't reach calendars, output the schedule as a list of proposed times with attendees so I
+can create them myself, and say which conflicts you couldn't check.
+
+### Documents
+
+Duplicate the documents from the copy list, name each copy for this hire the way the process
+document says to, and put them where it says. If the naming convention isn't specified, ask
+rather than inventing one — inconsistent names are what make these impossible to find later.
+
+### Don't create anything twice
+
+Before creating anything, check whether it already exists — a task list for this hire, calendar
+invites, duplicated documents. If it does, update it rather than making a second copy, and tell
+me what you found. I will re-run this after fixing a gap, and a re-run that doubles everything is
+worse than one that does nothing.
+
+### Report back
+
+One short summary: what was created, where, with links. Then what wasn't, and why — tools you
+couldn't reach, people you couldn't match to accounts, meetings you couldn't schedule, gaps
+that stayed gaps.
+
+**Nothing goes to the new hire or the manager in this step** unless I've asked for it specifically.
+Creating the plan and announcing it are two different decisions.
 
 ---
 
