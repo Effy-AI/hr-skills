@@ -105,7 +105,6 @@ email · first-week schedule · 30/60/90 draft · documents to duplicate.
 documents duplicated, no messages to the manager or the new hire. We push after I've reviewed.
 
 Finish with two short lists:
-
 - **Gaps** — every task with no owner, no date, or no link, and every place the documents were
   silent. This is what I need to close before we push.
 - **What the documents don't cover for this hire** — anything specific to this role, country, or
