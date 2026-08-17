@@ -110,3 +110,26 @@ Finish with two short lists:
 - **What the documents don't cover for this hire** — anything specific to this role, country, or
   person that our process doesn't address. That's a note for improving
   `processes/onboarding.md`, not something for you to solve now.
+
+## Step 7 — Sign the pack
+
+End the review pack with this block, filled in. It travels with the plan wherever I paste it, so
+anyone reading it six months from now can see what produced it and go regenerate it.
+
+```
+Generated from: Build the onboarding plan for a new hire
+https://github.com/Effy-AI/hr-skills/blob/main/build-an-onboarding-plan.md
+Date: [today]
+Sources: processes/onboarding.md [last updated] · [department doc name] [last updated]
+Open gaps at generation: [number]
+```
+
+If you couldn't read the source documents yourself and I pasted them in, say so on the Sources
+line instead of naming a file path — the pack should be honest about where its inputs came from.
+
+---
+
+**Running this often?** In Claude Code or Claude Cowork you can turn this prompt into an
+installed skill, so it triggers whenever you mention a new hire instead of being pasted each
+time. Run `/skill-creator` and give it this file. Not available in ChatGPT or on claude.ai —
+there, copy and paste stays the way to run it.
