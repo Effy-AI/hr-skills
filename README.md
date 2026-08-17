@@ -1,17 +1,33 @@
 # HR Prompts
 
-Ready-to-run prompts for HR and people leaders. Paste one into Claude or ChatGPT and answer the
-questions it asks.
+Ready-to-run prompts for HR and people leaders. Paste one into Claude or ChatGPT and answer
+the questions it asks.
 
 No installation, no account, no tooling. Each prompt is a single file you copy and paste.
 
 Built by [Effy AI](https://effy.ai).
 
-## Prompts
+## For HR and people leaders
 
 | Prompt | What it does | Time |
 | --- | --- | --- |
-| [Document our onboarding process](prompts/document-onboarding.md) | Works out how onboarding actually runs at your company — from your email history and a short interview — then writes it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire. | 15–20 min |
+| [Document our onboarding process](document-onboarding.md) | Works out how onboarding actually runs here — from your email history and a short interview — then writes it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire. | 15–20 min |
+| [Analyze our review cycle](analyze-review-cycle.md) | Turns a pile of review files into one leadership report: scores with evidence, themes, calibration and bias flags, and a promotion-ready shortlist capped at 15% of headcount. | 20–30 min |
+| [Build a career track](build-a-career-track.md) | Interviews you, then builds one function's level ladder and competency matrix — including the anti-patterns and sideways moves most frameworks leave blank. | 30–40 min |
+
+## For managers
+
+| Prompt | What it does | Time |
+| --- | --- | --- |
+| [Prep for a 1:1](prep-for-a-1-1.md) | Reads your last five 1:1s with someone, surfaces the commitments you both forgot, and gives you an agenda and four questions worth actually asking. | 2 min |
+| [Find the themes in my 1:1 notes](find-themes-in-1-1-notes.md) | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
+| [Draft a manager review](draft-a-manager-review.md) | Drafts your review of a direct report from your own meeting history, every claim tied to a citation. Run once per report. | 15 min |
+
+## For everyone
+
+| Prompt | What it does | Time |
+| --- | --- | --- |
+| [Draft my self-review](draft-a-self-review.md) | Drafts your self-review from six months of your own work, with citations and honest gaps instead of invented achievements. | 15 min |
 
 ## How to use one
 
@@ -22,55 +38,73 @@ conversation. This is the reliable way.
 
 ```
 Follow the instructions at this link:
-https://raw.githubusercontent.com/Effy-AI/hr-skills/main/prompts/document-onboarding.md
+https://raw.githubusercontent.com/Effy-AI/hr-skills/main/document-onboarding.md
 ```
 
-This is quicker but less dependable — depending on the model and your settings it may summarise
-the page instead of running it, or not fetch it at all. If it does anything other than start
-asking you questions, fall back to copy and paste.
+Quicker, but less dependable — depending on the model and your settings it may summarise the
+page instead of running it, or not fetch it at all. If it does anything other than start asking you
+questions, fall back to copy and paste.
 
-## What to expect
+## Running a review cycle with these
 
-The prompt does three things in order, and it will not skip ahead:
+The two review prompts need **ten minutes of setup from HR before you send them out.** Each
+one ends with a `SECTION 2` holding sample review questions. Replace those with the exact
+questions from your review form — word for word, in the same order they appear — and swap the
+values block for your own competency framework, or delete it.
 
-1. **Looks at what actually happened.** If it can search your email, it finds your last few
-   hires and reads the threads around their start dates — especially the reminders you had to
-   send, which are the best evidence of where a process breaks. If it can't search anything, it
-   asks you to paste the threads in.
-2. **Interviews you.** Up to ten questions, one at a time, skipping anything it already worked
-   out. If your answer contradicts what it found in your email, it says so and asks which is
-   right.
-3. **Writes the document**, and tells you what it wasn't sure about.
+That step is the whole difference between a neat demo and a review done in 15 minutes. If the
+questions match the form, people paste answers straight across. If they don't, everyone has to
+remap and the time saving disappears.
 
-## Reading the output
+Then attach both prompts to the cycle announcement you were already sending. Don't run a
+separate "AI initiative" — and don't make it mandatory. A 15-minute review is its own
+advertisement.
 
-Nothing is presented as fact unless it is one. Every line carries a tag:
+Two rules worth stating in the announcement:
 
-| Tag | Meaning |
-| --- | --- |
-| `[CONFIRMED]` | You said it, or an email shows it happening |
-| `[GUESS: verify]` | Inferred from evidence — plausible but unproven |
-| `[SUGGESTED]` | A standard step proposed to fill a gap, not something your company does |
+1. **You own the final text.** The AI drafts, you edit and submit. Nobody submits anything they
+   haven't read.
+2. **Nothing is shared.** Everyone runs the prompt in their own environment on their own
+   context. The manager's 1:1 notes stay in the manager's tools. The only thing that reaches the
+   company is the final text someone chooses to paste into the form.
 
-The run ends with the `[GUESS]` and `[SUGGESTED]` lines collected as a list of open questions.
-Work through it and you have a document that is fully `[CONFIRMED]`.
+## What these prompts have in common
 
-A draft with its uncertainty visible is more useful than a polished one that quietly guesses.
+**Evidence before questions.** Each one looks at what actually happened before asking you
+anything. If it can search your email or meeting notes it does; if it can't, it tells you exactly what
+to paste in and waits.
 
-## Before you share the output
+**No invented facts.** No tool, step, person, quote or date that didn't come from the evidence or
+from you. Where a claim rests on thin evidence, the prompt says so instead of filling the gap.
+Several ask for citations on every factual claim.
 
-These prompts read your email to understand your process, which means they open offer letters
-and contracts — the documents most likely to contain salary figures and ID details. Each prompt
-instructs the model never to copy that into the document, and to refer to people by role and
-initials rather than names.
+**The uncertainty stays visible.** Prompts that produce a document tag what's confirmed versus
+what's inferred, and end by handing you the open questions rather than quietly resolving them.
 
-That instruction is reliable, not infallible. **Read the document before you send it to anyone.**
+A draft with its uncertainty visible is more useful than a polished one that guesses.
+
+## Before you share any output
+
+These prompts read your email, notes and files. That means they open offer letters, review
+forms and 1:1 records — the documents most likely to contain salary figures, ID details and
+private conversations.
+
+Each prompt instructs the model to keep that out of what it writes, and to refer to people by role
+or initials. The review analysis anonymises names by default. Those instructions are reliable,
+not infallible.
+
+**Read the output before you send it to anyone.**
+
+If you're in the EU or UK, note that uploading identifiable performance data about your
+employees into a third-party AI tool has data-protection implications that depend on your
+provider, your plan, and your own privacy notice. Worth a conversation with whoever owns
+GDPR compliance at your company before a whole review cycle goes through it.
 
 ## Using these with your own team
 
-The prompts are MIT licensed. Fork the repository, edit them to match how your company actually
-works, and point your team at your copy. Nothing here phones home — these are plain text files,
-and Effy AI never sees your conversation or your data.
+MIT licensed. Fork the repository, edit the prompts to match how your company actually works,
+and point your team at your copy. Nothing here phones home — these are plain text files, and
+Effy AI never sees your conversation or your data.
 
 ## Contributing
 
@@ -78,7 +112,7 @@ Open an issue or a pull request. A good prompt here:
 
 - gathers evidence before asking questions
 - asks one question at a time, and not too many
-- tags what it is unsure about instead of guessing quietly
+- tags what it's unsure about instead of guessing quietly
 - never invents a tool, step, person, or date
 - ends by handing you the open questions
 

@@ -8,8 +8,8 @@ document until Pass 3.
 
 Follow these for the whole conversation.
 
-- Refer to people by **role and initials**, never full names. `Hiring manager (A.M.)`, not
-  `Andrew Makhovskyi`.
+- Refer to people by **role and initials**, never full names. `Hiring manager (J.K.)`, not
+  `Jamie Kowalski`.
 - **Never write sensitive personal data** into the document, even if you find it: ID or passport
   numbers, bank details, home addresses, salary figures, immigration status, health information.
   Describe the *step* that handles the data, never the data itself.
