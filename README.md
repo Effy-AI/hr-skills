@@ -1,70 +1,50 @@
-# HR Skills
+# HR Prompts
 
-A library of Claude Agent Skills for HR and people leaders at small and mid-sized companies.
+Ready-to-run prompts for HR and people leaders. Paste one into Claude or ChatGPT and answer the
+questions it asks.
+
+No installation, no account, no tooling. Each prompt is a single file you copy and paste.
+
 Built by [Effy AI](https://effy.ai).
 
-Most people processes at a 30–500 person company are undocumented. They live in one person's
-head and only surface when something is late. These skills turn that into documentation you can
-hand to someone else — by reading the evidence of what actually happened, asking you about the
-rest, and marking clearly which parts they are unsure about.
+## Prompts
 
-## Skills
-
-| Skill | What it does | Writes to |
+| Prompt | What it does | Time |
 | --- | --- | --- |
-| [`document-onboarding`](skills/document-onboarding/SKILL.md) | Documents your real onboarding process, split by owner (HR, hiring manager, buddy, IT, new hire). Reads your docs and recent-hire email evidence, interviews you, then writes. | `processes/onboarding.md` |
+| [Document our onboarding process](prompts/document-onboarding.md) | Works out how onboarding actually runs at your company — from your email history and a short interview — then writes it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire. | 15–20 min |
 
-## Install
+## How to use one
 
-Each skill is a self-contained folder. Copy the ones you want into your skills directory.
+**Copy and paste.** Open the prompt, copy the whole file, paste it into a new Claude or ChatGPT
+conversation. This is the reliable way.
 
-**For all your projects:**
-
-```bash
-git clone https://github.com/Effy-AI/hr-skills.git
-cp -r hr-skills/skills/document-onboarding ~/.claude/skills/
-```
-
-**For one project only:**
-
-```bash
-cp -r hr-skills/skills/document-onboarding .claude/skills/
-```
-
-Restart Claude Code, or run `/reload-plugins`. The skill is then available as
-`/document-onboarding`, and Claude will also invoke it on its own when you describe the task.
-
-**To try it without installing:**
-
-```bash
-claude --plugin-dir /path/to/hr-skills
-```
-
-This loads every skill in the library for that session only. It works because a skill library
-and a plugin root are the same layout — see below.
-
-## The Claude-HR folder
-
-Every skill reads from and writes to one folder. Connect it in Cowork, or open it as your
-working directory in Claude Code.
+**Or paste the link.** Some models will fetch a URL and follow what's in it:
 
 ```
-Claude-HR/
-├── ai-usage-policy.md     # read first by every skill; governs naming and data handling
-├── company/               # org structure, roles, locations, tooling
-└── processes/             # the documented processes; skills write here
+Follow the instructions at this link:
+https://raw.githubusercontent.com/Effy-AI/hr-skills/main/prompts/document-onboarding.md
 ```
 
-If you don't have one, create the folders and copy the skill's
-[`ai-usage-policy-starter.md`](skills/document-onboarding/reference/ai-usage-policy-starter.md)
-in as `ai-usage-policy.md`. Skills offer to do this for you if the file is missing.
+This is quicker but less dependable — depending on the model and your settings it may summarise
+the page instead of running it, or not fetch it at all. If it does anything other than start
+asking you questions, fall back to copy and paste.
 
-Full contract:
-[`claude-hr-folder.md`](skills/document-onboarding/reference/claude-hr-folder.md).
+## What to expect
 
-## How these skills handle uncertainty
+The prompt does three things in order, and it will not skip ahead:
 
-Nothing is stated as fact unless it is one. Every line in a generated document carries a tag:
+1. **Looks at what actually happened.** If it can search your email, it finds your last few
+   hires and reads the threads around their start dates — especially the reminders you had to
+   send, which are the best evidence of where a process breaks. If it can't search anything, it
+   asks you to paste the threads in.
+2. **Interviews you.** Up to ten questions, one at a time, skipping anything it already worked
+   out. If your answer contradicts what it found in your email, it says so and asks which is
+   right.
+3. **Writes the document**, and tells you what it wasn't sure about.
+
+## Reading the output
+
+Nothing is presented as fact unless it is one. Every line carries a tag:
 
 | Tag | Meaning |
 | --- | --- |
@@ -72,49 +52,35 @@ Nothing is stated as fact unless it is one. Every line in a generated document c
 | `[GUESS: verify]` | Inferred from evidence — plausible but unproven |
 | `[SUGGESTED]` | A standard step proposed to fill a gap, not something your company does |
 
-Each run ends with the `[GUESS]` and `[SUGGESTED]` lines collected as open questions. The output
-is a draft with its uncertainty visible, not a finished artifact pretending to be authoritative.
+The run ends with the `[GUESS]` and `[SUGGESTED]` lines collected as a list of open questions.
+Work through it and you have a document that is fully `[CONFIRMED]`.
 
-## Privacy
+A draft with its uncertainty visible is more useful than a polished one that quietly guesses.
 
-These skills read your email and files to understand your processes. They run wherever Claude
-runs — nothing is sent to Effy AI. They are instructed never to write ID numbers, bank details,
-home addresses, or salary figures into any document, and to refer to people by role and
-initials.
+## Before you share the output
 
-Review generated documents before sharing them. The skills are careful, not infallible.
+These prompts read your email to understand your process, which means they open offer letters
+and contracts — the documents most likely to contain salary figures and ID details. Each prompt
+instructs the model never to copy that into the document, and to refer to people by role and
+initials rather than names.
 
-## Repository layout
+That instruction is reliable, not infallible. **Read the document before you send it to anyone.**
 
-```
-.
-├── skills/                          # the library — one folder per skill
-│   └── document-onboarding/
-│       ├── SKILL.md
-│       └── reference/               # files this skill needs, travel with it
-├── docs/
-│   ├── skill-template.md            # starting point for a new skill
-│   └── convert-to-plugin.md         # how to ship this as a plugin
-└── scripts/validate-skills.py       # frontmatter and naming checks
-```
+## Using these with your own team
 
-`skills/` sits at the repository root on purpose. That is the same place Claude Code looks for
-skills inside a plugin, so this library is already plugin-shaped: `claude --plugin-dir .` loads
-it today, with no manifest. Turning it into a distributable plugin means adding two small files
-and changing nothing else — see [docs/convert-to-plugin.md](docs/convert-to-plugin.md).
+The prompts are MIT licensed. Fork the repository, edit them to match how your company actually
+works, and point your team at your copy. Nothing here phones home — these are plain text files,
+and Effy AI never sees your conversation or your data.
 
-Each skill folder is self-contained, including the files it depends on. That is what makes
-`cp -r skills/document-onboarding ~/.claude/skills/` work as an install.
+## Contributing
 
-## Development
+Open an issue or a pull request. A good prompt here:
 
-```bash
-python3 scripts/validate-skills.py     # frontmatter, naming, self-containment
-claude --plugin-dir .                  # load every skill for one session
-/reload-plugins                        # pick up edits without restarting
-```
-
-CI runs the validator on every push and pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
+- gathers evidence before asking questions
+- asks one question at a time, and not too many
+- tags what it is unsure about instead of guessing quietly
+- never invents a tool, step, person, or date
+- ends by handing you the open questions
 
 ## License
 

@@ -2,21 +2,7 @@
 .DS_Store
 ._*
 
-# Python (scripts/validate-skills.py)
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
-# Node (CI installs claude-code globally, but just in case)
-node_modules/
-
 # Editors
 .idea/
 .vscode/
 *.swp
-
-# Logs and secrets
-*.log
-.env
-.env.*
