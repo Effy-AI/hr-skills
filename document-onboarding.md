@@ -13,14 +13,39 @@ Follow these for the whole conversation.
 - **Never write sensitive personal data** into the document, even if you find it: ID or passport
   numbers, bank details, home addresses, salary figures, immigration status, health information.
   Describe the *step* that handles the data, never the data itself.
-- **Never invent** a tool, step, person, or date. If you don't know, it becomes a question in
-  Pass 2 or a tagged line in Pass 3.
+- **Never invent** a tool, step, person, or date. If you don't know, it becomes a question — in
+  Pass 2, or in the clarification round before the document is written.
 - Plain language. Two pages maximum.
 
 ## Pass 1 — Find out what actually happens
 
-**If you can search my email, calendar, or files, do it now.** Find the last 2 or 3 people we
-hired. Search around their start dates for:
+Gather evidence from every source you can reach before you ask me anything.
+
+### Task and project tools
+
+**If I have a task tracker connected — Asana, Monday, Jira, Wrike, Todoist, ClickUp, Linear or
+similar — search it now.** Onboarding usually lives there as a template project, a recurring
+checklist, or a set of tasks named after the new hire. Look for:
+
+- onboarding templates, project templates, task templates
+- projects or task lists named after recent hires
+- tasks assigned to HR, IT, or a hiring manager around a start date
+- **overdue and repeatedly rescheduled tasks** — these mark the steps that keep slipping
+- comments arguing about who owns a step
+
+Record the task name, owner, due date relative to the start date, and whether it was completed
+on time.
+
+### Knowledge bases and documents
+
+**If I have Confluence, Notion, Google Drive, SharePoint, Slack or similar connected, search
+those too**, plus any local files you can read. Look for onboarding checklists, first-week
+schedules, welcome decks, start-here pages, IT setup runbooks, and 30/60/90 templates.
+
+### Email and calendar
+
+**If you can search my email or calendar, do it now.** Find the last 2 or 3 people we hired.
+Search around their start dates for:
 
 - offer confirmations and signed contracts
 - welcome emails and first-week schedules
@@ -31,15 +56,27 @@ hired. Search around their start dates for:
 The reminders matter most. Every reminder marks a step that does not happen on its own. Note who
 had to chase whom, and for what.
 
-For each step, record what happened, who did it, how many days before or after the start date,
-and whether it slipped.
+For each step you find, record what happened, who did it, how many days before or after the
+start date, and whether it slipped.
 
-**If you have no access to my email or files**, say so, and tell me exactly what to paste in.
-Ask for the email threads around the last 2 or 3 hires and any onboarding notes, checklists, or
-templates we already have. Wait for me to paste them before continuing.
+### Ask me for the plans themselves
 
-Build a picture of what we actually do, not what we'd say we do. Do not ask me anything else
-yet.
+Whatever you found, **ask me to paste or attach the onboarding plans we already use** — links to
+a Notion page, an Asana or Monday template, a Google Doc, or files (PDF, DOCX, PPTX, XLSX).
+Tell me exactly what would help most, based on the gaps in what you found. Wait for my reply
+before continuing.
+
+If I give you **more than one plan**, work out which role each one covers — engineering, sales,
+support, manager, generic — from its content. Say what you concluded, one line per plan. **If a
+plan's role is unclear, or two plans look like they cover the same role, ask me** rather than
+guessing.
+
+**If you have no access to any of these sources**, say so plainly and tell me exactly what to
+paste in: email threads around the last 2 or 3 hires, and any onboarding notes, checklists, or
+templates we already have.
+
+Build a picture of what we actually do, not what we'd say we do. Beyond asking for the plans, do
+not ask me anything else yet.
 
 ## Pass 2 — Interview me
 
@@ -66,9 +103,49 @@ whichever of these still have gaps, most consequential first:
 If my answer **contradicts what you found in Pass 1, say so and ask which is right.** Quote what
 you found. Never silently pick one version.
 
-## Pass 3 — Write the document
+## Pass 3 — Close the gaps, then write
 
-Write the document with exactly these sections:
+### Clarification round first
+
+Before you write a single line, check your material against the checklist below. Anything you
+cannot state as fact — because no evidence covers it, or my answers left it open — becomes a
+question.
+
+**Ask me those questions now, as one grouped list**, organized by owner. Say what you already
+have and what is missing. Wait for my answers.
+
+Use this checklist to find the gaps. It is the standard shape of an onboarding process, not a
+description of ours — treat every line as something to *ask about*, never something to assume.
+
+**HR** — contract out for signature; HRIS profile and payroll set up; hire announced to the
+company; manager and buddy notified; hardware ordered; welcome email with the first-day
+schedule; new-hire document copies made; day-1 welcome conversation; benefits enrollment; the
+30/60/90 check-in cycle.
+
+**Hiring manager** — recurring 1:1 and week-1 intro meetings booked; buddy picked; the 30/60/90
+adapted for this hire; day-1 personal welcome; a first real task assigned; check-ins at 30, 60
+and 90.
+
+**Buddy** — hello message before day 1; day-1 tour or tools walkthrough; touchpoints through
+week 1; when the duty ends.
+
+**IT** — laptop prepared; accounts created from a role template; day-1 handover; two-factor
+login verified.
+
+**New hire** — contract signed; ID and bank details submitted (where, and by which route);
+day-1 setup checklist; the start-here page read; intro meetings booked; benefits enrolled; first
+task finished; any reflection or self-review before the day-30 check-in.
+
+If I say a step doesn't exist here, leave it out of the document. Do not fill it with a
+plausible default.
+
+### Write the document
+
+**Write only what I confirmed or what the evidence shows.** No inferences, no placeholders, no
+suggested-but-unverified steps. If something is still unknown after the clarification round,
+leave it out and say, in one line at the end, what you left out and why.
+
+Sections, exactly these:
 
 1. **Overview** — the phases from offer accepted to day 90. Three sentences.
 2. **One section per owner** — HR, hiring manager, buddy, IT, new hire. Each a checklist ordered
@@ -83,46 +160,3 @@ Write the document with exactly these sections:
 
 **If you can write files**, save it as `processes/onboarding.md`. **If you can't**, output the
 whole document here in the chat as markdown in a single code block so I can copy it out.
-
-### Tag every line
-
-| Tag | Meaning |
-| --- | --- |
-| `[CONFIRMED]` | I said it, or an email shows it |
-| `[GUESS: verify]` | Your inference from evidence — plausible, unproven |
-| `[SUGGESTED]` | Taken from the skeleton below, not from us |
-
-No line goes untagged.
-
-### Fill gaps from this skeleton
-
-Where my evidence and answers leave a gap, don't leave the line empty. Propose the standard step
-from this skeleton instead, marked `[SUGGESTED]`, so I can keep it or cut it.
-
-**HR** — contract out for signature the day the offer is accepted; HRIS profile and payroll
-triggered 2 weeks before start; hire announced to the company; manager and buddy notified with
-dates; hardware ordered 10 days out; welcome email with the first-day schedule sent 1 week out;
-new-hire document copies made; day-1 welcome conversation; benefits enrollment confirmed in
-week 1; the 30/60/90 check-in cycle run to the end.
-
-**Hiring manager** — recurring 1:1 and week-1 intro meetings booked before day 1; buddy picked;
-the 30/60/90 adapted for this hire; day-1 personal welcome and team lunch; a small real task
-assigned in week 1; check-ins held at 30, 60 and 90.
-
-**Buddy** — hello message before day 1; day-1 tour or tools walkthrough; daily touchpoint
-through week 1; duty formally ends around week 6.
-
-**IT** — laptop prepared 10 days out; accounts created from a role template 3 days out; day-1
-handover; two-factor login verified in week 1.
-
-**New hire** — contract signed, and ID and bank details submitted directly in the HRIS, never
-over email; day-1 setup checklist; the start-here page read; intro meetings booked; benefits
-enrolled; first task finished in week 1; a short reflection filled at day 25, before the day-30
-check-in.
-
-## Finish with my homework
-
-After the document, list every `[GUESS: verify]` and `[SUGGESTED]` item as the questions I need
-to close out. Group them by owner. Keep it a plain list.
-
-That list is my homework, not yours to resolve.
