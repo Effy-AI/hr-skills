@@ -4,8 +4,8 @@ We have a new hire. Build the onboarding plan.
 
 **Hire:** [role] in [department], manager [initials], starting [date], based in [country].
 
-If I haven't filled those in, ask me for them before you start. All five matter — the country
-decides which variant applies, and the start date is what every due date is counted from.
+Fill in what you know. Don't stop to ask for the rest yet — Step 2 works out which of these
+actually matter for our process before anything gets asked.
 
 ## What this is, and what it isn't
 
@@ -16,27 +16,60 @@ You're instantiating it.
 That distinction is the whole point. A plan with invented steps in it is worse than no plan,
 because someone will follow it and do the wrong thing.
 
-## Step 1 — Read the two source documents
+## Step 1 — Find and read the process document
 
-You need two things:
+Our general onboarding process lives in a connected folder, canonically at
+`processes/onboarding.md` — but don't match on the name. The name could be similar or
+different; what identifies the document is its content: it describes the onboarding process
+end to end, split by owner, and names the tools the process runs in. A file called
+`onboarding.md` that turns out to be a checklist template or a policy summary is not it.
 
-1. **`processes/onboarding.md`** — our general onboarding process, split by owner.
-2. **The department document for this role** — the meeting list, the 30/60/90 outline, and the
-   document copy list for this department.
+**If you can read files**, search the connected folder(s) now:
 
-**If you can read files**, read both from my Claude-HR folder now. Tell me which two documents
-you used and when each was last updated. If the department document doesn't exist for this
-department, say so and stop — don't substitute another department's.
+- **Exactly one file qualifies** — read it, tell me which file you're using and when it was
+  last updated, and move on.
+- **Several files could be it** — list them and ask me which is current. Don't merge them.
+- **Promising names, but none contains both the process description and the tools** — say so,
+  name what you looked at, and stop. Don't fall back to the closest match.
+- **No connected folder, or nothing remotely matching** — tell me to connect the folder or
+  paste the document in, and wait.
 
-**If you can't read files**, ask me to paste both in, and wait. Do not proceed on one of the two,
-and do not build a plan from general knowledge of how onboarding usually works. If I only have
-one document, say what the other one would have given you and let me decide whether to
-continue.
+**If you can't read files**, ask me to paste it, and wait. Do not build a plan from general
+knowledge of how onboarding usually works.
 
-If neither document exists, tell me to document the process first — a per-hire plan derived from
-nothing is guesswork with a due date attached.
+If the document doesn't exist at all, tell me to document the process first — a per-hire plan
+derived from nothing is guesswork with a due date attached.
 
-## Step 2 — The task list
+## Step 2 — Work out which hire attributes matter, then collect the missing ones
+
+From the process document, list the attributes of a hire that change the plan. An attribute
+matters if the process branches on it — country variants, per-department documents,
+role-specific steps — or if dates are counted from it, like the start date. Typically that's
+role, department, manager, start date, and country, but the document decides, not this list.
+
+Then compare against what I've already told you in this conversation:
+
+- **Matters and I've given it** — use it. Don't re-ask to confirm.
+- **Matters and is missing** — ask for all of these in one message, saying for each why the
+  process needs it ("country decides which variant applies"). Wait for the answers.
+- **The process never branches on it** — don't ask for it, even if it's in the template line
+  at the top.
+
+If I've told you something about this hire the process has no branch for — a contractor, a
+part-time start, a second office — flag it now as a process gap rather than silently treating
+them as the default case.
+
+## Step 3 — Read the department document
+
+The second source document: the department document for this role — the meeting list, the
+30/60/90 outline, and the document copy list for this department. Find it the way Step 1
+found the process document: by content, not just name, in the same folder.
+
+If it doesn't exist for this department, say so and stop — don't substitute another
+department's. If I only have one of the two documents, say what the other one would have
+given you and let me decide whether to continue.
+
+## Step 4 — The task list
 
 Every task from both documents, as one list. For each:
 
@@ -59,7 +92,7 @@ Same for a task with no timing: flag it rather than inventing an offset.
 Apply the country variant from the documents. If the documents describe no variant for
 [country], say so explicitly — that's a gap in our process, not something for you to fill.
 
-## Step 3 — The welcome email and first-week schedule
+## Step 5 — The welcome email and first-week schedule
 
 **Welcome email**, in my voice. If you can see how I write — my emails, my messages — learn
 from that. If you can't, ask me for two or three emails I've sent so you have something to work
@@ -73,7 +106,7 @@ like. Nothing that isn't in the documents.
 meeting is, who's in it, how long, and roughly when in the week. Flag any meeting the list names
 without saying who runs it.
 
-## Step 4 — The manager's 30/60/90
+## Step 6 — The manager's 30/60/90
 
 Draft it from the department document's outline. The shape is:
 
@@ -88,7 +121,7 @@ mistakes it for settled.
 Where the department outline is thin, leave the gap visible rather than padding it with generic
 milestones.
 
-## Step 5 — Documents to duplicate
+## Step 7 — Documents to duplicate
 
 From the department document's copy list: which documents get a per-hire copy, with a link to
 each master.
@@ -96,23 +129,23 @@ each master.
 **Links, never copied content.** If a master has no link in the source document, list the document
 and flag that the link is missing.
 
-## Step 6 — Show me one review pack
+## Step 8 — Show me one review pack
 
 Everything above, in one place, in this order: hire details · task list · needs an owner · welcome
 email · first-week schedule · 30/60/90 draft · documents to duplicate.
 
 **Don't create anything in other tools yet.** No calendar invites, no tickets, no emails sent, no
-documents duplicated, no messages to the manager or the new hire. Step 8 is the push, and it
+documents duplicated, no messages to the manager or the new hire. Step 10 is the push, and it
 only runs once I've said so.
 
 Finish with two short lists:
 - **Gaps** — every task with no owner, no date, or no link, and every place the documents were
   silent. This is what I need to close before we push.
 - **What the documents don't cover for this hire** — anything specific to this role, country, or
-  person that our process doesn't address. That's a note for improving
-  `processes/onboarding.md`, not something for you to solve now.
+  person that our process doesn't address. That's a note for improving the process document,
+  not something for you to solve now.
 
-## Step 7 — Sign the pack
+## Step 9 — Sign the pack
 
 End the review pack with this block, filled in. It travels with the plan wherever I paste it, so
 anyone reading it six months from now can see what produced it and go regenerate it.
@@ -121,17 +154,17 @@ anyone reading it six months from now can see what produced it and go regenerate
 Generated from: Build the onboarding plan for a new hire
 https://github.com/Effy-AI/hr-skills/blob/main/build-an-onboarding-plan.md
 Date: [today]
-Sources: processes/onboarding.md [last updated] · [department doc name] [last updated]
+Sources: [process doc name] [last updated] · [department doc name] [last updated]
 Open gaps at generation: [number]
 ```
 
 If you couldn't read the source documents yourself and I pasted them in, say so on the Sources
 line instead of naming a file path — the pack should be honest about where its inputs came from.
 
-## Step 8 — Push it, once I've approved
+## Step 10 — Push it, once I've approved
 
 **Wait for me to say go.** Not "looks good" in passing — an explicit instruction to push. Until
-then Step 6 stands and nothing gets created anywhere.
+then Step 8 stands and nothing gets created anywhere.
 
 ### Where it goes
 
@@ -156,7 +189,7 @@ Create every task from the approved pack. For each one, set:
   see why it exists.
 
 **Anything still in the "needs an owner" or "gaps" list does not get pushed.** It stays a gap.
-Pushing a task with a guessed owner is the exact failure Step 2 exists to prevent, and it's worse
+Pushing a task with a guessed owner is the exact failure Step 4 exists to prevent, and it's worse
 here because now it's in a system where it looks official.
 
 ### Calendars

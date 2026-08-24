@@ -8,6 +8,10 @@ document until Pass 3.
 
 Follow these for the whole conversation.
 
+- **Document the current state only.** Write what we actually do, not what a good process would
+  look like. Never improve, reorder, or "clean up" a step while documenting it. If you see an
+  obvious problem, save it for the *Known failure points* section — do not fold the fix into
+  the process as if it already existed.
 - Refer to people by **role and initials**, never full names. `Hiring manager (J.K.)`, not
   `Jamie Kowalski`.
 - **Never write sensitive personal data** into the document, even if you find it: ID or passport
@@ -16,6 +20,30 @@ Follow these for the whole conversation.
 - **Never invent** a tool, step, person, or date. If you don't know, it becomes a question — in
   Pass 2, or in the clarification round before the document is written.
 - Plain language. Two pages maximum.
+
+### How to weigh evidence
+
+Not everything you learn counts the same. From strongest to weakest:
+
+1. A calendar event, sent email, or completed task that actually happened
+2. An existing onboarding document, checklist, or template
+3. An HRIS or system record
+4. The same step observed across two or more hires
+5. What I or a manager *say* happens
+6. My recollection of a one-off
+7. Common HR practice — **this is worth nothing here; never use it to fill a gap**
+
+When strong evidence contradicts what I tell you, do not merge the two into something vague.
+Quote the evidence, name the conflict, and ask which is right.
+
+**Absence is evidence too.** A step everyone says exists but no email, calendar event, or task
+ever shows; an account created two days late; someone asking twice for the same thing; HR
+chasing a manager — each of these tells you something the happy-path story does not. Record
+what you *expected to find and didn't*, not only what you found.
+
+**One hire is not a process.** For every step, note how many of the recent hires it appears
+for. Seen for all of them: standard. Seen once: possibly a one-off — ask before treating it as
+standard. Never generalize a single welcome email into "we send welcome emails."
 
 ## Pass 1 — Find out what actually happens
 
@@ -56,8 +84,9 @@ Search around their start dates for:
 The reminders matter most. Every reminder marks a step that does not happen on its own. Note who
 had to chase whom, and for what.
 
-For each step you find, record what happened, who did it, how many days before or after the
-start date, and whether it slipped.
+For each step you find, record: what happened, who did it, how many days before or after the
+start date, what evidence backs it (per the hierarchy above), how many hires it appears for,
+and whether it slipped.
 
 ### Ask me for the plans themselves
 
@@ -80,36 +109,53 @@ not ask me anything else yet.
 
 ## Pass 2 — Interview me
 
-Ask me questions **one at a time**, **ten at most**. Wait for each answer before asking the
-next. **Skip anything Pass 1 already answered** — a question you could have answered yourself is
-a wasted question.
+Ask me questions **one at a time**. Wait for each answer before asking the next.
 
-Start by telling me, in three or four lines, what you found in Pass 1. Then work through
-whichever of these still have gaps, most consequential first:
+**Ask only what the evidence could not answer, and stop when further answers would no longer
+change the document.** Ten questions is the ceiling, not the target — three good questions beat
+ten dutiful ones. A question you could have answered yourself from Pass 1 is a wasted question.
 
-- **The owners** — what I do, what the hiring manager does, whether we have a buddy, who handles
-  IT and equipment.
-- **Offer to day 1** — paperwork, contracts, accounts, hardware, welcome message. Who triggers
-  each, and when.
-- **Day 1 and week 1** — who meets them, what they read, what they set up themselves.
-- **Check-ins** — what actually happens at 30, 60 and 90 days, and who runs it.
-- **Tools** — HRIS, payroll, e-signature, project tracker, chat, whiteboard. Names, not
-  categories.
-- **Documents** — which ones every new hire gets a copy of, like a welcome deck or a first-week
-  doc, and where the master of each lives.
-- **Variants** — what differs by role, what differs by country.
-- **Breakage** — where the process most often falls over.
+Start by telling me, in three or four lines, what you found in Pass 1. Then ask in this order
+of importance:
 
-If my answer **contradicts what you found in Pass 1, say so and ask which is right.** Quote what
-you found. Never silently pick one version.
+1. **Ownership ambiguity** — a step happened but nobody clearly owns it, or two people each
+   think the other does it.
+2. **Missing critical steps** — something onboarding cannot work without, with no evidence it
+   happens: contract signature, payroll setup, account creation, equipment.
+3. **Contradictions** — the evidence says one thing, a document or my earlier answer says
+   another. Quote what you found and ask which is right. Never silently pick one version.
+4. **One-offs vs standard** — steps seen for only one hire that you need classified.
+5. **Employee-experience gaps** — the new hire waited, asked twice, or had nothing to do.
+6. **Minor details** — only if questions remain in the budget.
 
-## Pass 3 — Close the gaps, then write
+Topics worth covering where gaps exist: the owners (me, hiring manager, buddy, IT); offer to
+day 1; day 1 and week 1; check-ins at 30/60/90; tool names (HRIS, payroll, e-signature,
+tracker, chat — names, not categories); documents every new hire gets and where each master
+lives; variants by role or country; where the process most often falls over.
 
-### Clarification round first
+## Pass 3 — Reconstruct, close the gaps, then write
 
-Before you write a single line, check your material against the checklist below. Anything you
-cannot state as fact — because no evidence covers it, or my answers left it open — becomes a
-question.
+### Timeline first
+
+Before asking anything else, show me the process as a compact timeline relative to the start
+date, so I can validate it at a glance. One line per step: timing, owner, action, and — only
+where the backing is weak — a short evidence note.
+
+```
+T-14  HR            contract sent for signature
+T-7   IT            accounts created            (1 of 3 hires — on time; other 2 late)
+T-1   Manager       welcome message             (seen once — one-off?)
+D1    HR            orientation
+D30   Manager       check-in                    (your recollection only)
+```
+
+Mark every line you cannot back with strong evidence. This timeline is the skeleton of the
+document — errors are cheapest to catch here.
+
+### Clarification round
+
+Check your material against the checklist below. Anything you cannot state as fact — because no
+evidence covers it, or my answers left it open — becomes a question.
 
 **Ask me those questions now, as one grouped list**, organized by owner. Say what you already
 have and what is missing. Wait for my answers.
@@ -145,17 +191,26 @@ plausible default.
 suggested-but-unverified steps. If something is still unknown after the clarification round,
 leave it out and say, in one line at the end, what you left out and why.
 
+Do not clutter the document with evidence citations. Mark only the weak spots: append
+`*(unverified)*` to any step backed by nothing stronger than recollection, so a reader knows
+exactly which lines to double-check. Everything unmarked is evidence-backed or confirmed.
+
 Sections, exactly these:
 
 1. **Overview** — the phases from offer accepted to day 90. Three sentences.
 2. **One section per owner** — HR, hiring manager, buddy, IT, new hire. Each a checklist ordered
-   by timing, with the timing on every line (`10 days before start`, `day 1`, `week 1`).
+   by timing, with the timing on every line (`10 days before start`, `day 1`, `week 1`) and,
+   where one exists, the trigger that starts it (`after contract signed`, `when HRIS record
+   created`).
 3. **Variants** — per role, per country. Only real differences. Skip the section if there are
    none.
 4. **Tools and documents** — what we use, links to where the masters live, and which documents
    get duplicated for each new hire. **Links, never copied content.**
 5. **Check-in and feedback cadence.**
-6. **Data note** — which steps touch sensitive personal data (ID documents, bank details, home
+6. **Known failure points** — the steps the evidence shows slipping: reminders sent, deadlines
+   missed, duplicated work. One line each, stating what the evidence was. Facts only — no
+   recommendations unless I ask for them.
+7. **Data note** — which steps touch sensitive personal data (ID documents, bank details, home
    addresses), and how we handle them.
 
 **If you can write files**, save it as `processes/onboarding.md`. **If you can't**, output the
