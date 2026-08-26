@@ -37,7 +37,16 @@ end to end, split by owner, and names the tools the process runs in. A file call
 **If you can't read files**, ask me to paste it, and wait. Do not build a plan from general
 knowledge of how onboarding usually works.
 
-If the document doesn't exist at all, tell me to document the process first — a per-hire plan
+If the document doesn't exist at all, stop and hand off — don't build the plan.
+
+- **If `onboarding-docs` is installed as a skill in this environment**, invoke it now and tell me
+  you're doing so. When it finishes and the process document exists, come back to Step 1.
+- **If it isn't installed**, tell me to run the "Document onboarding process" prompt first:
+  https://github.com/Effy-AI/hr-skills/blob/main/onboarding-docs.md — copy the whole file into a
+  new conversation, answer its questions, then re-run this one.
+
+That prompt reconstructs how onboarding actually runs here from email, calendar, and task
+tools, and writes the document this plan reads. Don't try to do its job inline — a per-hire plan
 derived from nothing is guesswork with a due date attached.
 
 ## Step 2 — Work out which hire attributes matter, then collect the missing ones
@@ -152,7 +161,7 @@ anyone reading it six months from now can see what produced it and go regenerate
 
 ```
 Generated from: Build the onboarding plan for a new hire
-https://github.com/Effy-AI/hr-skills/blob/main/build-an-onboarding-plan.md
+https://github.com/Effy-AI/hr-skills/blob/main/onboarding-plan.md
 Date: [today]
 Sources: [process doc name] [last updated] · [department doc name] [last updated]
 Open gaps at generation: [number]
