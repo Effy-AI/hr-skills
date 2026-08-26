@@ -1,5 +1,8 @@
 # Build a career track
 
+**Career track builder** (`career_track_builder`)  
+Interview you, then build one function's level ladder and competency matrix — including the anti-patterns and sideways moves most frameworks leave blank.
+
 I want to build a career track for one function at my company — the level ladder, the
 competencies that matter, and what each level expects. Interview me before you draft anything.
 

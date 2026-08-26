@@ -1,5 +1,8 @@
 # Prep me for my next 1:1
 
+**1-on-1 preparation** (`one_on_one_prep`)  
+Produce a coaching agenda for an upcoming 1-on-1 — key themes, open action items, a conversation framework, and 4–6 questions tailored to the person.
+
 I have a 1:1 coming up with someone on my team. Get me ready for it. I want an agenda, the
 open items I've forgotten about, and a few questions worth actually asking — not a generic
 template.

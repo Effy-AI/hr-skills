@@ -1,5 +1,8 @@
 # Document our onboarding process
 
+**Onboarding process documentation** (`onboarding_process_docs`)  
+Work out how onboarding actually runs here — from your email history and a short interview — then write it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire.
+
 I want you to write my company's onboarding process into one document. Before writing anything,
 learn how onboarding actually works here. Three passes. Do not skip ahead, and do not write the
 document until Pass 3.

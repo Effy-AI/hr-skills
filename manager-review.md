@@ -1,5 +1,8 @@
 # Draft a manager review of my team member
 
+**Manager review draft** (`manager_review_draft`)  
+Draft your review of one direct report from your own meeting history — every claim tied to a citation, gaps flagged instead of filled. Run once per report.
+
 > **HR: adjust this before sending it out.** Replace the questions in SECTION 2 with the exact
 > questions from your manager review form — word for word, in the same order they appear.
 > Then replace the frameworks block with your own values or competency model, or delete it.

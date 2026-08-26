@@ -1,5 +1,8 @@
 # Build the onboarding plan for a new hire
 
+**New hire onboarding plan** (`onboarding_plan`)  
+Apply your documented onboarding process to one person — an owned and dated task list, welcome email, first-week schedule, draft 30/60/90, and a push to your tools once you approve.
+
 We have a new hire. Build the onboarding plan.
 
 **Hire:** [role] in [department], manager [initials], starting [date], based in [country].

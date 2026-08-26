@@ -1,5 +1,8 @@
 # Write our HR team's AI usage policy
 
+**HR AI usage policy** (`hr_ai_usage_policy`)  
+Write your HR team's AI usage policy — one page of plain-language rules that push adoption as much as they restrict it, shaped by where your employees and candidates sit.
+
 Help me write our HR team's AI usage policy, and save it in this folder. One page, plain
 language, rules people will actually follow — not legal boilerplate nobody reads.
 

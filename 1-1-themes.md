@@ -1,5 +1,8 @@
 # Find the themes in my 1:1 notes
 
+**1-on-1 theme analysis** (`one_on_one_themes`)  
+Read months of 1-on-1 notes at once and surface the patterns — recurring topics, the commitments you keep making and not keeping, and the people showing signals worth attention.
+
 I've been running 1:1s for months and the notes are piling up. I want to know what I'm missing:
 what keeps coming up, what I keep promising and not doing, and who's showing signs I should
 pay attention to.

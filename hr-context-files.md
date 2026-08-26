@@ -1,5 +1,8 @@
 # Create my HR context files
 
+**HR context files setup** (`hr_context_files`)  
+Build the folder structure, context files, and logs that future AI sessions run on — assembled from what can be verified about your company, not a generic template.
+
 Help me create my HR context files in this folder — the folder structure, context files,
 and logs that future AI sessions will run on. Built from what you can verify, not from a
 generic template.

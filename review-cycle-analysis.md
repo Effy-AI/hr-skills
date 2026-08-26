@@ -1,5 +1,8 @@
 # Analyze our performance review cycle
 
+**Review cycle analysis** (`review_cycle_analysis`)  
+Turn a pile of review files into one leadership report — cohort scores with evidence, recurring themes, calibration and bias flags, and a promotion-ready shortlist capped at 15% of headcount.
+
 I'm going to give you our performance review data. Turn it into one report our leadership team
 can actually use: how each cohort is doing, who's promotion-ready, and where our reviews are
 being graded inconsistently.

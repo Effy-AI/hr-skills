@@ -1,5 +1,8 @@
 # Draft my self-review
 
+**Self-review draft** (`self_review_draft`)  
+Draft your self-review from six months of your own work — evidence with citations, honest gaps, and no invented achievements.
+
 > **HR: adjust this before sending it out.** Replace the questions in SECTION 2 with the exact
 > questions from your self-review form — word for word, in the same order they appear. Then
 > replace the frameworks block with your own values or competency model, or delete it. Takes

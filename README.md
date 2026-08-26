@@ -9,26 +9,33 @@ Built by [Effy AI](https://effy.ai).
 
 ## For HR and people leaders
 
-| Prompt | What it does | Time |
-| --- | --- | --- |
-| [Document our onboarding process](onboarding-docs.md) | Works out how onboarding actually runs here — from your email history and a short interview — then writes it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire. | 15–20 min |
-| [Build an onboarding plan for a new hire](onboarding-plan.md) | Applies your documented process to one person: task list with one owner and a date each, welcome email, first-week schedule, draft 30/60/90, documents to copy. Then pushes it to your tools — Slack lists, Wrike, Monday.com, calendars — after you approve. Needs the document above to exist first. | 5 min |
-| [Analyze our review cycle](review-cycle-analysis.md) | Turns a pile of review files into one leadership report: scores with evidence, themes, calibration and bias flags, and a promotion-ready shortlist capped at 15% of headcount. | 20–30 min |
-| [Build a career track](career-track.md) | Interviews you, then builds one function's level ladder and competency matrix — including the anti-patterns and sideways moves most frameworks leave blank. | 30–40 min |
+| Prompt | Library ID | What it does | Time |
+| --- | --- | --- | --- |
+| [Document our onboarding process](onboarding-docs.md) | `onboarding_process_docs` | Works out how onboarding actually runs here — from your email history and a short interview — then writes it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire. | 15–20 min |
+| [Build an onboarding plan for a new hire](onboarding-plan.md) | `onboarding_plan` | Applies your documented process to one person: task list with one owner and a date each, welcome email, first-week schedule, draft 30/60/90, documents to copy. Then pushes it to your tools — Slack lists, Wrike, Monday.com, calendars — after you approve. Needs the document above to exist first. | 5 min |
+| [Analyze our review cycle](review-cycle-analysis.md) | `review_cycle_analysis` | Turns a pile of review files into one leadership report: scores with evidence, themes, calibration and bias flags, and a promotion-ready shortlist capped at 15% of headcount. | 20–30 min |
+| [Build a career track](career-track.md) | `career_track_builder` | Interviews you, then builds one function's level ladder and competency matrix — including the anti-patterns and sideways moves most frameworks leave blank. | 30–40 min |
 
 ## For managers
 
-| Prompt | What it does | Time |
-| --- | --- | --- |
-| [Prep for a 1:1](1-1-prep.md) | Reads your last five 1:1s with someone, surfaces the commitments you both forgot, and gives you an agenda and four questions worth actually asking. | 2 min |
-| [Find the themes in my 1:1 notes](1-1-themes.md) | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
-| [Draft a manager review](manager-review.md) | Drafts your review of a direct report from your own meeting history, every claim tied to a citation. Run once per report. | 15 min |
+| Prompt | Library ID | What it does | Time |
+| --- | --- | --- | --- |
+| [Prep for a 1:1](1-1-prep.md) | `one_on_one_prep` | Reads your last five 1:1s with someone, surfaces the commitments you both forgot, and gives you an agenda and four questions worth actually asking. | 2 min |
+| [Find the themes in my 1:1 notes](1-1-themes.md) | `one_on_one_themes` | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
+| [Draft a manager review](manager-review.md) | `manager_review_draft` | Drafts your review of a direct report from your own meeting history, every claim tied to a citation. Run once per report. | 15 min |
 
 ## For everyone
 
-| Prompt | What it does | Time |
-| --- | --- | --- |
-| [Draft my self-review](self-review.md) | Drafts your self-review from six months of your own work, with citations and honest gaps instead of invented achievements. | 15 min |
+| Prompt | Library ID | What it does | Time |
+| --- | --- | --- | --- |
+| [Draft my self-review](self-review.md) | `self_review_draft` | Drafts your self-review from six months of your own work, with citations and honest gaps instead of invented achievements. | 15 min |
+
+## Setting up your HR workspace
+
+| Prompt | Library ID | What it does | Time |
+| --- | --- | --- | --- |
+| [Create my HR context files](hr-context-files.md) | `hr_context_files` | Builds the folder structure, context files, and logs that future AI sessions run on — assembled from what can be verified about your company, not a generic template. | 20–30 min |
+| [Write our HR team's AI usage policy](ai-usage-policy.md) | `hr_ai_usage_policy` | Writes your team's AI usage policy — one page of plain-language rules that push adoption as much as they restrict it, shaped by where your employees and candidates sit. | 15 min |
 
 The two onboarding prompts are a pair, and the order matters. **Document our onboarding
 process** writes `processes/onboarding.md` once, and fills gaps with suggestions you accept or
