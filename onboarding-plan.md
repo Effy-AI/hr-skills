@@ -54,7 +54,7 @@ build the plan on top of a gap.
   it directly. When it finishes and the process document exists on disk, come back to Step 1,
   read it, and only then continue to Step 2.
 - **If you can't reach it either way**, tell me to run the "Document onboarding process" prompt
-  first: https://github.com/Effy-AI/hr-skills/blob/main/onboarding_process_docs.md — copy the whole file
+  first: https://github.com/Effy-AI/hr-skills/blob/main/onboarding-process-docs.md — copy the whole file
   into a new conversation, answer its questions, then re-run this one.
 
 That prompt reconstructs how onboarding actually runs here from email, calendar, and task
@@ -173,7 +173,7 @@ anyone reading it six months from now can see what produced it and go regenerate
 
 ```
 Generated from: Build the onboarding plan for a new hire
-https://github.com/Effy-AI/hr-skills/blob/main/onboarding_plan.md
+https://github.com/Effy-AI/hr-skills/blob/main/onboarding-plan.md
 Date: [today]
 Sources: [process doc name] [last updated] · [department doc name] [last updated]
 Open gaps at generation: [number]

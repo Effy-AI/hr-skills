@@ -105,5 +105,5 @@ repeat — and a sign-off table.
 
 ## Step 5 — Show me the draft
 
-When I approve it, save it as hr_ai_usage_policy.md in the folder settled in Step 0 and confirm the
+When I approve it, save it as hr-ai-usage-policy.md in the folder settled in Step 0 and confirm the
 full path.
