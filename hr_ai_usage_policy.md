@@ -11,8 +11,8 @@ the goal is a team that uses AI daily and knows exactly where the lines are.
 
 ## Step 0 — Confirm where the file will live
 
-Check whether you have access to a connected folder named CLAUDE-HR. If you do, that's
-where the final file goes. If not, ask me to either (a) create a CLAUDE-HR folder and connect it
+Check whether you have access to a connected folder named HR-CONTEXT-FOR-AI. If you do, that's
+where the final file goes. If not, ask me to either (a) create an HR-CONTEXT-FOR-AI folder and connect it
 to this chat — then wait until I confirm it's connected before saving anything — or (b) name a
 different connected folder to use for all HR context and deliverables. Don't write the file
 anywhere until this is settled.
@@ -105,5 +105,5 @@ repeat — and a sign-off table.
 
 ## Step 5 — Show me the draft
 
-When I approve it, save it as ai-usage-policy.md in the folder settled in Step 0 and confirm the
+When I approve it, save it as hr_ai_usage_policy.md in the folder settled in Step 0 and confirm the
 full path.

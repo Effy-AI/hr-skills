@@ -34,19 +34,28 @@ end to end, split by owner, and names the tools the process runs in. A file call
 - **Several files could be it** — list them and ask me which is current. Don't merge them.
 - **Promising names, but none contains both the process description and the tools** — say so,
   name what you looked at, and stop. Don't fall back to the closest match.
-- **No connected folder, or nothing remotely matching** — tell me to connect the folder or
-  paste the document in, and wait.
+- **No connected folder, or nothing remotely matching** — don't conclude the document doesn't
+  exist. The far more likely explanation is that you're looking in the wrong place. Ask me to
+  click **'add folder'** and attach the folder that holds our HR context, mentioning that **if we
+  built it with Effy's `hr-context-files` prompt it's named HR-CONTEXT-FOR-AI** — a concrete name
+  is much easier for me to act on than "the right folder". Wait for me, then search again from the
+  top of this step.
 
 **If you can't read files**, ask me to paste it, and wait. Do not build a plan from general
 knowledge of how onboarding usually works.
 
-If the document doesn't exist at all, stop and hand off — don't build the plan.
+### Still nothing after I've attached a folder
 
-- **If `onboarding-docs` is installed as a skill in this environment**, invoke it now and tell me
-  you're doing so. When it finishes and the process document exists, come back to Step 1.
-- **If it isn't installed**, tell me to run the "Document onboarding process" prompt first:
-  https://github.com/Effy-AI/hr-skills/blob/main/onboarding-docs.md — copy the whole file into a
-  new conversation, answer its questions, then re-run this one.
+Now you can conclude the process document doesn't exist yet. Stop and get it written — don't
+build the plan on top of a gap.
+
+- **Read the `onboarding-docs` skill from the Effy AI connection and run it now**, telling me in
+  one line that you're doing so and why. If it's installed as a skill in this environment, invoke
+  it directly. When it finishes and the process document exists on disk, come back to Step 1,
+  read it, and only then continue to Step 2.
+- **If you can't reach it either way**, tell me to run the "Document onboarding process" prompt
+  first: https://github.com/Effy-AI/hr-skills/blob/main/onboarding_process_docs.md — copy the whole file
+  into a new conversation, answer its questions, then re-run this one.
 
 That prompt reconstructs how onboarding actually runs here from email, calendar, and task
 tools, and writes the document this plan reads. Don't try to do its job inline — a per-hire plan
@@ -164,7 +173,7 @@ anyone reading it six months from now can see what produced it and go regenerate
 
 ```
 Generated from: Build the onboarding plan for a new hire
-https://github.com/Effy-AI/hr-skills/blob/main/onboarding-plan.md
+https://github.com/Effy-AI/hr-skills/blob/main/onboarding_plan.md
 Date: [today]
 Sources: [process doc name] [last updated] · [department doc name] [last updated]
 Open gaps at generation: [number]

@@ -63,20 +63,26 @@ standard. Never generalize a single welcome email into "we send welcome emails."
 
 ## Step 0 — Where this gets saved
 
-Before anything else, ask me to click **'add folder'** and choose the folder where my HR context
+Before anything else, ask me to click **'add folder'** and attach the folder where my HR context
 files live (or should live). The document you write at the end belongs in that folder, alongside
 the rest of my HR context — not in a scratch directory I'll never find again.
 
-Once I've picked it, look at what's in it:
+Mention the name: **if I've already run Effy's `hr-context-files` prompt, that folder is called
+HR-CONTEXT-FOR-AI**. Say so when you ask — it turns a vague question into one I can answer in two
+seconds. Don't insist on the name, though; a differently-named folder with the right contents is
+fine, and the check below is on contents, not on the label.
+
+Once I've attached it, look at what's in it:
 
 - **Folder has an HR context structure already** (company/, processes/, logs/ or similar) — good.
   Read what's there before Pass 1; existing process files, decision logs, and policy indexes are
   Pass 1 evidence, and often the strongest kind. Then carry on.
-- **Folder is empty or has no HR structure** — build it first, following the `hr-context-files.md`
-  skill (https://github.com/Effy-AI/hr-skills/blob/main/hr-context-files.md): the company/,
+- **Folder is empty or has no HR structure** — build it first, following the `hr-context-files`
+  skill (https://github.com/Effy-AI/hr-skills/blob/main/hr_context_files.md): the company/,
   processes/, OUTPUTS/, and logs/ folders, each with a README.md explaining what lives there and
-  when to read or write it. Say in one line that you're doing this and why. Then start Pass 1 —
-  the onboarding document you produce becomes the first real file in processes/.
+  when to read or write it. If `hr-context-files` is installed as a skill here, invoke it rather
+  than reimplementing it from memory. Say in one line that you're doing this and why. Then start
+  Pass 1 — the onboarding document you produce becomes the first real file in processes/.
 
 If I don't pick a folder, say once that the document will only exist in this chat, and continue.
 Don't block on it.

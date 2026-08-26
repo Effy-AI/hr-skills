@@ -3,9 +3,32 @@
 **HR context files setup** (`hr_context_files`)  
 Build the folder structure, context files, and logs that future AI sessions run on — assembled from what can be verified about your company, not a generic template.
 
-Help me create my HR context files in this folder — the folder structure, context files,
-and logs that future AI sessions will run on. Built from what you can verify, not from a
-generic template.
+Help me create my HR context files — the folder structure, context files, and logs that future
+AI sessions will run on. Built from what you can verify, not from a generic template.
+
+## Step 0 — Get the folder connected first
+
+Before any research, ask me to click **'add folder'** and connect the folder where my AI context
+files should live. If I don't have one yet, ask me to create it and name it **HR-CONTEXT-FOR-AI**
+— a fixed name so every other HR prompt in this set can point at the same place instead of asking
+me to hunt for it each time.
+
+Everything you build in Step 3 goes inside that folder. Without it, the structure lands in a
+scratch directory I'll never open again, and the next session starts from zero — which defeats
+the entire point of building context.
+
+**Explain to me, in two or three lines, what this folder is** — because the natural assumption is
+that you're asking me to duplicate my HRIS, and I'll resist that, correctly. Make these points in
+your own words:
+
+- It holds *context*, not records. Patterns, cadences, decisions, and pointers — how we work, not
+  who works here. Employee data stays in the HRIS.
+- It's what makes future AI sessions useful without re-explaining the company every time.
+- Policies and templates are **linked**, never copied. There is one master of each document and it
+  is not in this folder.
+
+If I decline or no folder is available, say plainly that the structure will only exist in this
+chat and that I'll need to copy it out myself — then continue. Don't block on it.
 
 ## Step 1 — Research
 
