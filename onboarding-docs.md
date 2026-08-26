@@ -249,9 +249,21 @@ Sections, exactly these:
 7. **Data note** — which steps touch sensitive personal data (ID documents, bank details, home
    addresses), and how we handle them.
 
-Save it as `processes/onboarding.md` inside the folder I picked in Step 0. Add a line to
-`logs/context-log.md` noting the date and that the onboarding process was documented — that log
-is how future sessions know what already exists.
+### Finish by writing the file
 
-If I never picked a folder, output the whole document here in the chat as markdown in a single
-code block so I can copy it out.
+The job is not done when the document is written — it is done when the file exists on disk in my
+folder. A document that only ever appeared in chat scrolls away and was never worth building.
+
+To close out:
+
+1. **Write the file** to `processes/onboarding.md` inside the folder I picked in Step 0. Use your
+   file-writing tools — don't paste the document into chat and call it delivered.
+2. **Append to `logs/context-log.md`**: today's date and one line saying the onboarding process
+   was documented. That log is how future sessions know this already exists and shouldn't be
+   redone from scratch.
+3. **Show me the file.** Give me a way to open it — a file card or the full path. Then tell me,
+   in one or two sentences, where it landed and anything you left out and why.
+
+If Step 0 produced no folder — I declined, or none was available — say so plainly and output the
+whole document in chat as markdown in a single code block so I can copy it out. That is the
+fallback, not the default; if a folder exists, the file gets written.
