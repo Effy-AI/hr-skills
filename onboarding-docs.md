@@ -23,6 +23,19 @@ Follow these for the whole conversation.
 - **Never invent** a tool, step, person, or date. If you don't know, it becomes a question — in
   Pass 2, or in the clarification round before the document is written.
 - Plain language. Two pages maximum.
+- **In chat, be brief.** This is separate from the document itself — it's about how you talk to
+  me while building it. One direct question at a time, no preamble. When you report what you
+  found (Pass 1 recap, timeline notes, anything conversational), compress it to 1-2 sentences —
+  I can ask for the detail if I want it.
+
+  Don't write: "No recent-hire trail exists. The HRIS has only 3 records (you, Sergey Karlo —
+  status 'Invited,' no hire date, Chloe J — a Kimmeridge contact, not an employee). Calendar
+  shows Sergey Karlo, Alexey Postulha, and Andrii Hromovyi on a recurring 'Team Sync' going back
+  to March 2025 — over a year of history, not a new hire. Slack DMs with Sergey are all
+  product/eng work..." and so on.
+
+  Write instead: "No onboarding trail anywhere — HRIS, calendar, Slack, email. Either the team
+  hasn't grown in a year, or hiring happens somewhere I can't see. Which is it?"
 
 ### How to weigh evidence
 
@@ -47,6 +60,26 @@ what you *expected to find and didn't*, not only what you found.
 **One hire is not a process.** For every step, note how many of the recent hires it appears
 for. Seen for all of them: standard. Seen once: possibly a one-off — ask before treating it as
 standard. Never generalize a single welcome email into "we send welcome emails."
+
+## Step 0 — Where this gets saved
+
+Before anything else, ask me to click **'add folder'** and choose the folder where my HR context
+files live (or should live). The document you write at the end belongs in that folder, alongside
+the rest of my HR context — not in a scratch directory I'll never find again.
+
+Once I've picked it, look at what's in it:
+
+- **Folder has an HR context structure already** (company/, processes/, logs/ or similar) — good.
+  Read what's there before Pass 1; existing process files, decision logs, and policy indexes are
+  Pass 1 evidence, and often the strongest kind. Then carry on.
+- **Folder is empty or has no HR structure** — build it first, following the `hr-context-files.md`
+  skill (https://github.com/Effy-AI/hr-skills/blob/main/hr-context-files.md): the company/,
+  processes/, OUTPUTS/, and logs/ folders, each with a README.md explaining what lives there and
+  when to read or write it. Say in one line that you're doing this and why. Then start Pass 1 —
+  the onboarding document you produce becomes the first real file in processes/.
+
+If I don't pick a folder, say once that the document will only exist in this chat, and continue.
+Don't block on it.
 
 ## Pass 1 — Find out what actually happens
 
@@ -216,5 +249,9 @@ Sections, exactly these:
 7. **Data note** — which steps touch sensitive personal data (ID documents, bank details, home
    addresses), and how we handle them.
 
-**If you can write files**, save it as `processes/onboarding.md`. **If you can't**, output the
-whole document here in the chat as markdown in a single code block so I can copy it out.
+Save it as `processes/onboarding.md` inside the folder I picked in Step 0. Add a line to
+`logs/context-log.md` noting the date and that the onboarding process was documented — that log
+is how future sessions know what already exists.
+
+If I never picked a folder, output the whole document here in the chat as markdown in a single
+code block so I can copy it out.
