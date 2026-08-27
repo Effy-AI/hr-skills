@@ -49,15 +49,14 @@ knowledge of how onboarding usually works.
 Now you can conclude the process document doesn't exist yet. Stop and get it written — don't
 build the plan on top of a gap.
 
-- **Read the `onboarding-docs` skill from the Effy AI connection and run it now**, telling me in
-  one line that you're doing so and why. If it's installed as a skill in this environment, invoke
-  it directly. When it finishes and the process document exists on disk, come back to Step 1,
-  read it, and only then continue to Step 2.
-- **If you can't reach it either way**, tell me to run the "Document onboarding process" prompt
-  first: https://github.com/Effy-AI/hr-skills/blob/main/onboarding-process-docs.md — copy the whole file
-  into a new conversation, answer its questions, then re-run this one.
+- **Read the `onboarding-process-docs` skill from the Effy AI connection and run it now**, telling
+  me in one line that you're doing so and why. If it's installed as a skill in this environment,
+  invoke it directly. When it finishes and the process document exists on disk, come back to
+  Step 1, read it, and only then continue to Step 2.
+- **If you can't reach it either way**, tell me to run the "Document onboarding process"
+  (`onboarding-process-docs`) skill myself, answer its questions, and then re-run this one.
 
-That prompt reconstructs how onboarding actually runs here from email, calendar, and task
+That skill reconstructs how onboarding actually runs here from email, calendar, and task
 tools, and writes the document this plan reads. Don't try to do its job inline — a per-hire plan
 derived from nothing is guesswork with a due date attached.
 

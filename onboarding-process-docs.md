@@ -78,7 +78,7 @@ Once I've attached it, look at what's in it:
   Read what's there before Pass 1; existing process files, decision logs, and policy indexes are
   Pass 1 evidence, and often the strongest kind. Then carry on.
 - **Folder is empty or has no HR structure** — build it first, following the `hr-context-files`
-  skill (https://github.com/Effy-AI/hr-skills/blob/main/hr-context-files.md): the company/,
+  skill: the company/,
   processes/, OUTPUTS/, and logs/ folders, each with a README.md explaining what lives there and
   when to read or write it. If `hr-context-files` is installed as a skill here, invoke it rather
   than reimplementing it from memory. Say in one line that you're doing this and why. Then start
