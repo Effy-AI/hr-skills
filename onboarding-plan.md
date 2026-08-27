@@ -171,8 +171,7 @@ End the review pack with this block, filled in. It travels with the plan whereve
 anyone reading it six months from now can see what produced it and go regenerate it.
 
 ```
-Generated from: Build the onboarding plan for a new hire
-https://github.com/Effy-AI/hr-skills/blob/main/onboarding-plan.md
+Generated from: Build the onboarding plan for a new hire (onboarding-plan)
 Date: [today]
 Sources: [process doc name] [last updated] · [department doc name] [last updated]
 Open gaps at generation: [number]
