@@ -12,16 +12,19 @@ Work from my calendar, not from my memory. Count what's there and tell me the nu
 
 ## Step 1 — Establish who and when
 
+The window is **the last three months from today**. Don't ask me about it, don't offer to widen
+it, and don't quietly extend it because the numbers look thin. Three months is long enough to
+show a cadence and short enough that the gaps still matter.
+
 Ask me for:
 
 - **The manager** — name and email. Usually me; sometimes I'm auditing someone else's cadence.
 - **The direct reports** — name and email for each.
-- **The window** — default to the last three months if I don't say.
 
 Use the timezone of the manager's calendar for every date you report, and say which timezone
 that is.
 
-Don't start pulling until you have all three. If I've given you a team list in some other form —
+Don't start pulling until you have both. If I've given you a team list in some other form —
 an org chart, a Slack group, an email thread — read it and confirm the list back to me before
 you use it.
 
@@ -36,12 +39,13 @@ manager's calendar, never as the primary source. If you can see both and they di
 the discrepancy rather than picking one.
 
 **If you have no calendar access at all**, say that plainly and stop. Ask me to export the
-manager's calendar for the window and paste it in, or run this somewhere with calendar access.
+manager's calendar for the last three months and paste it in, or run this somewhere with
+calendar access.
 Don't estimate.
 
 ## Step 3 — Pull the events
 
-List every event on the manager's calendar in the window.
+List every event on the manager's calendar in the three-month window.
 
 - Include recurring instances **individually**, not the series. A weekly series that was
   cancelled six times is not six meetings.
