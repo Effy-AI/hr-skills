@@ -23,6 +23,7 @@ Built by [Effy AI](https://effy.ai).
 | [Prep for a 1:1](one-on-one-prep.md) | `one_on_one_prep` | Reads your last five 1:1s with someone, surfaces the commitments you both forgot, and gives you an agenda and four questions worth actually asking. | 2 min |
 | [Find the themes in my 1:1 notes](one-on-one-themes.md) | `one_on_one_themes` | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
 | [Draft a manager review](manager-review-draft.md) | `manager_review_draft` | Drafts your review of a direct report from your own meeting history, every claim tied to a citation. Run once per report. | 15 min |
+| [Audit my 1:1 cadence](one-on-one-cadence-audit.md) | `one_on_one_cadence_audit` | Counts the 1:1s that actually got scheduled with each direct report over the last three months — dates, days since the last one, longest gap, implied cadence. Read-only. | 5 min |
 
 ## For everyone
 
