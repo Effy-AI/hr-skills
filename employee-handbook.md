@@ -285,10 +285,7 @@ memory — and borrow structure only, never text or policy values.
 
 - GitLab (handbook.gitlab.com) — exhaustive reference, too big to imitate
 - PostHog (posthog.com/handbook) — mid-size remote, direct tone
-- Sourcegraph (handbook.sourcegraph.com)
-- Remote.com (remote.com/handbook) — multi-country leave and benefits
-- Meltano (handbook.meltano.com) — GitLab style at 30 people
 - Basecamp (github.com/basecamp/handbook) — short, founder voice
-- 18F (github.com/18F/handbook) — onboarding checklists, public sector
-- Buffer (open.buffer.com) — pay transparency
+- TTS / 18F (github.com/GSA-TTS/handbook) — onboarding checklists, public sector
+- Buffer (buffer.com/open, buffer.com/salaries) — pay transparency
 - thoughtbot (thoughtbot.com/playbook) — consultancy ways of working
