@@ -15,6 +15,7 @@ Built by [Effy AI](https://effy.ai).
 | [Build an onboarding plan for a new hire](onboarding-plan.md) | `onboarding_plan` | Applies your documented process to one person: task list with one owner and a date each, welcome email, first-week schedule, draft 30/60/90, documents to copy. Then pushes it to your tools — Slack lists, Wrike, Monday.com, calendars — after you approve. Needs the document above to exist first. | 5 min |
 | [Analyze our review cycle](review-cycle-analysis.md) | `review_cycle_analysis` | Turns a pile of review files into one leadership report: scores with evidence, themes, calibration and bias flags, and a promotion-ready shortlist capped at 15% of headcount. | 20–30 min |
 | [Build a career track](career-track-builder.md) | `career_track_builder` | Interviews you, then builds one function's level ladder and competency matrix — including the anti-patterns and sideways moves most frameworks leave blank. | 30–40 min |
+| [Write our employee handbook](employee-handbook.md) | `employee_handbook` | Researches your company from the web and your connected tools, interviews you on the things nobody publishes, then writes a first usable handbook — every fact sourced, every gap marked, legal sections flagged per country. Saves it to your wiki or Drive. | 30–45 min |
 
 ## For managers
 
