@@ -24,14 +24,13 @@ Built by [Effy AI](https://effy.ai).
 | --- | --- | --- | --- |
 | [Prep for a 1:1](one-on-one-prep.md) | `one_on_one_prep` | Reads your last five 1:1s with someone, surfaces the commitments you both forgot, and gives you an agenda and four questions worth actually asking. | 2 min |
 | [Find the themes in my 1:1 notes](one-on-one-themes.md) | `one_on_one_themes` | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
-| [Draft a manager review](manager-review-draft.md) | `manager_review_draft` | Drafts your review of a direct report from your own meeting history, every claim tied to a citation. Run once per report. | 15 min |
 | [Audit my 1:1 cadence](one-on-one-cadence-audit.md) | `one_on_one_cadence_audit` | Counts the 1:1s that actually got scheduled with each direct report over the last three months — dates, days since the last one, longest gap, implied cadence. Read-only. | 5 min |
 
 ## For everyone
 
 | Prompt | Library ID | What it does | Time |
 | --- | --- | --- | --- |
-| [Draft my self-review](self-review-draft.md) | `self_review_draft` | Drafts your self-review from six months of your own work, with citations and honest gaps instead of invented achievements. | 15 min |
+| [Draft a performance review](performance-review-draft.md) | `performance_review_draft` | Works out your role from your connected tools, then drafts whichever review you need — self, manager review of a direct report, upward review of your manager, or peer review — every claim tied to a citation, gaps flagged instead of filled. Run once per review. | 15 min |
 
 ## Setting up your HR workspace
 
@@ -64,16 +63,18 @@ questions, fall back to copy and paste.
 
 ## Running a review cycle with these
 
-The two review prompts need **ten minutes of setup from HR before you send them out.** Each
-one ends with a `SECTION 2` holding sample review questions. Replace those with the exact
-questions from your review form — word for word, in the same order they appear — and swap the
-values block for your own competency framework, or delete it.
+The review prompt needs **ten minutes of setup from HR before you send it out.** Its
+`SECTION 2` has one empty block per review type — self, manager, upward, peer. Paste the exact
+questions from each of your review forms into its block — word for word, in the same order they
+appear — and swap the values block for your own competency framework, or delete it. A filled
+block means the AI uses those questions and doesn't ask; an empty one means it asks each person
+for their form.
 
 That step is the whole difference between a neat demo and a review done in 15 minutes. If the
 questions match the form, people paste answers straight across. If they don't, everyone has to
 remap and the time saving disappears.
 
-Then attach both prompts to the cycle announcement you were already sending. Don't run a
+Then attach the prompt to the cycle announcement you were already sending. Don't run a
 separate "AI initiative" — and don't make it mandatory. A 15-minute review is its own
 advertisement.
 
