@@ -11,7 +11,10 @@ The reader is usually an HR or People lead. Write for them in plain language: sh
 
 ## 1. Collect inputs
 
-Ask once, in one message, for:
+First check what's reachable: a connected review system or HR tool (the current form templates
+and last cycle's answers export), drives and wikis (form documents, the competency framework,
+last cycle's summary). Say what you found in one or two lines. Then ask once, in one message, for
+whatever is still missing:
 
 1. **The current form(s).** Any format: pasted text, doc, PDF, screenshot, or an export from the review tool. Ask for the full question text, including the descriptions under each competency and the rating scale labels. Descriptions matter: long, multi-part descriptions are a main cause of weak answers.
 2. **Last cycle's answers as a CSV**, bulk export, all review types in one file or one file per type. Typical columns are Cycle, Review type, Reviewer, Reviewee, Topic, Question, Answer, Score. Anonymised reviewer names are fine.
@@ -30,7 +33,7 @@ Self and manager forms are often pasted as filled-in examples. Extract the quest
 
 ## 3. Analyse the answers
 
-Write the script at the end of this file to the scratchpad and run it on each CSV: `python3 -I analyze_reviews.py <file.csv> > stats.json`. It maps common header names automatically. If a column is missing, check `columns_used` in the output and fix the alias list.
+Write the script at the end of this file to your working folder and run it on each CSV: `python3 -I analyze_reviews.py <file.csv> > stats.json`. It needs pandas; install it if missing. It maps common header names automatically. If a column is missing, check `columns_used` in the output and fix the alias list.
 
 It reports, per review type:
 
@@ -168,6 +171,8 @@ If forms differ by review type, IC vs manager, or cycle, produce one table per d
 - Plain language: the summary is under 80 words and nothing needs an HR-research vocabulary to read.
 - In the chat reply, list anything the user should decide or verify: trend-breaking changes, the 3-point-scale trade-off, features their tool may not have, benchmark caveats.
 
+The `weak` and `low_visibility` samples can contain employee names. Use them to understand patterns; don't paste them into the report.
+
 ## Analysis script
 
 ```python
@@ -176,7 +181,7 @@ import warnings
 import pandas as pd
 warnings.filterwarnings("ignore")
 
-# Map common export headers to canonical names (Effy export headers are the defaults).
+# Map common review-tool export headers to canonical names.
 ALIASES = {
     "cycle": ["Cycle", "Review cycle", "Campaign"],
     "type": ["Review type", "Relationship", "Reviewer type", "Form"],
@@ -294,5 +299,3 @@ if __name__ == "__main__":
     for p in sys.argv[1:]:
         main(p)
 ```
-
-The `weak` and `low_visibility` samples can contain employee names. Use them to understand patterns; don't paste them into the report.

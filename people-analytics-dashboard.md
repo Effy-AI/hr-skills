@@ -1,4 +1,4 @@
-# Build our people analytics dashboard
+# Build a people analytics dashboard
 
 **People analytics dashboard** (`people_analytics_dashboard`)  
 Finds which of your connected tools hold people data, tells you what each export would unlock,
@@ -6,51 +6,56 @@ then builds one dashboard — headcount, attrition, engagement, performance, mob
 equity, hiring, absence, D&I, workforce planning — with a formula under every chart. Falls back
 to a fully worked sample dashboard if you have no data to hand.
 
-I want a people analytics dashboard I can open again next month and send upward. Not a pile of
-charts — a page where each block answers a question, the numbers carry a comparison, and every
-metric says how it was calculated so nobody argues about definitions in the meeting.
+The user wants a people analytics dashboard they can open again next month and send upward. Not a
+pile of charts — a page where each block answers a question, the numbers carry a comparison, and
+every metric says how it was calculated so nobody argues about definitions in the meeting.
 
 Work in three phases. Don't build anything until phase 2 is done.
 
 ## Ground rules
 
-- **No invented numbers.** Every figure on the dashboard comes from data I gave you or a tool
-  you read. If you build the sample version, label it as sample on every screen.
+- **No invented numbers.** Every figure comes from data the user gave you or a tool you read. If
+  you build the sample version, label it as sample on every screen.
 - **Anonymity threshold of 5.** Any survey-derived slice with fewer than five respondents is
-  suppressed and shown as "n<5". Individual-level views (flight risk, pay) get a visible note that
-  they are for HR and the direct manager only.
-- **State the denominator.** Turnover uses headcount at the start of the period unless the
-  catalog below says average headcount. Mixing denominators across cards makes the numbers
-  disagree with each other.
+  suppressed and shown as "n<5". Individual-level views (flight risk, pay) carry a visible note
+  that they're for HR and the direct manager only.
+- **State the denominator.** Turnover uses headcount at the start of the period unless the catalog
+  below says average headcount. Mixing denominators across cards makes the numbers disagree with
+  each other.
 - **A number without a comparison is decoration.** Every KPI carries a delta against the prior
-  period or a benchmark I supplied. If neither exists, say "no comparison available" rather than
-  showing a bare figure.
+  period or a benchmark the user supplied. If neither exists, say "no comparison available" rather
+  than showing a bare figure. Don't supply benchmarks from memory.
 - **A predictive score without its drivers is ignored.** If you show flight risk or an attrition
   forecast, show the reasons next to the score, and only build them when the data supports it.
+- **No compensation or legal advice.** Pay-equity numbers are reported as findings; decisions on
+  them need HR, finance or legal.
 
 ## Phase 1 — Find what data is already reachable
 
-Before asking me for anything, look at the tools you can call in this session. Search for
-anything that reads employees, HR records, payroll, surveys, engagement, reviews, performance,
-goals, applicants, requisitions, time off, or files and spreadsheets (Drive, Sheets, OneDrive,
-Notion, Airtable). Vendor names worth checking: HiBob, Personio, BambooHR, Rippling, Deel,
-Gusto, Workday, Lattice, Leapsome, Culture Amp, 15Five, Greenhouse, Lever, Ashby, Effy AI.
+Before asking for anything, look at the tools you can call in this session. Search for anything
+that reads employees, HR records, payroll, surveys, engagement, reviews, performance, goals or
+growth plans, career levels, applicants, requisitions, time off, or files and spreadsheets
+(Drive, Sheets, OneDrive, Notion, Airtable). Vendors worth checking: HiBob, Personio, BambooHR,
+Rippling, Deel, Gusto, Workday, Lattice, Leapsome, Culture Amp, 15Five, Greenhouse, Lever, Ashby,
+Effy AI. In Effy AI: the employee directory feeds headcount and span of control, review reports
+feed performance, growth plans feed growth-plan coverage, career tracks and assignments feed level
+mix, and 1-on-1 activities show 1:1 cadence per manager.
 
-For each candidate, make one small read to confirm the fields actually exist and are populated.
-A "department" column that is empty for everyone means that block can't segment.
+For each candidate, make one small read to confirm the fields exist and are populated. A
+"department" column that's empty for everyone means that block can't segment.
 
-Note any connector that is configured but not authorised or failed to connect — that's a gap I
-may be able to fix in one click, so name it.
+Name any connector that's configured but not authorised or failed to connect — that's a gap the
+user may be able to fix in one click.
 
-Then show me a short table: **source → which blocks it can feed → what's still missing**.
-Skip connectors that can't help (CRM, calendar, email, SEO tools). Keep it to what matters.
+Then show a short table: **source → which blocks it can feed → what's still missing**. Skip
+connectors that can't help (CRM, calendar, email, SEO tools).
 
-## Phase 2 — Ask me for data, and show me what each kind unlocks
+## Phase 2 — Ask for data, and show what each kind unlocks
 
-Ask what I can upload or point you to, and make the ask concrete with this table (drop rows
+Ask what the user can upload or point you to, and make the ask concrete with this table (drop rows
 phase 1 already covers):
 
-| If I give you… | You can build… |
+| If you give me… | I can build… |
 | --- | --- |
 | Employee list — ID, department, manager, level, start date, contract type, location; gender optional | Headcount & composition, and the segmentation every other block uses |
 | Exits — ID, exit date, voluntary/involuntary, regretted flag, reason | Retention & attrition: turnover, regretted, first-year, cohorts, heatmaps |
@@ -66,42 +71,40 @@ phase 1 already covers):
 Take anything tabular — CSV, spreadsheet, Google Sheet, Notion database, a pasted table. When
 something arrives, profile it before promising anything: columns, row count, date range, and a
 feasibility line per block ("Retention: feasible — exit date and type found; regretted flag
-missing, so no regretted attrition card"). If a column header is ambiguous, ask me **one**
-question about it. Don't guess what `status` means.
+missing, so no regretted attrition card"). If a column header is ambiguous, ask **one** question
+about it. Don't guess what `status` means.
 
-**If I have nothing to give you, or I say "just show me what it looks like":** offer the sample
-dashboard explicitly — the full ten blocks on invented data for a fictional company of around
-400 people, so I can see every chart and decide which ones I want on my own data. If I say yes,
-build it, keep the "sample data" label visible on every block, and stop there unless I ask for
-changes.
+**If the user has nothing, or says "just show me what it looks like":** offer the sample dashboard
+explicitly — all ten blocks on invented data for a fictional company of around 400 people, so
+they can see every chart and decide which they want on their own data. If they say yes, build it,
+keep the "sample data" label visible on every block, and stop there unless they ask for changes.
 
 ## Phase 3 — Choose the blocks, compute, build
 
 Pick blocks, not everything. Four full blocks beat ten half-empty ones. Include a block when its
-top two or three metrics can be computed from what I gave you; skip it and say why otherwise.
-Order by the priority below unless my question dictates otherwise — if I asked "why are people
-leaving", Retention comes first, then Engagement, then Compensation.
+top two or three metrics can be computed from what you have; skip it and say why otherwise. Order
+by the priority below unless the user's question dictates otherwise — if they asked "why are
+people leaving", Retention comes first, then Engagement, then Compensation.
 
-Compute every metric before you write a line of the page. For anything beyond a handful of rows
-do the arithmetic in code from the files, and keep that code so the numbers can be re-run on next
+Compute every metric before writing a line of the page. For anything beyond a handful of rows, do
+the arithmetic in code from the files, and keep that code so the numbers can be re-run on next
 month's export. Never hand-type an aggregate.
 
-**If you can produce a file or an artifact**, build the dashboard as one self-contained HTML page:
-a left-hand navigation of blocks; each block opens with the question it answers, the data
+**Build it as a dashboard artifact if the session offers one; otherwise as one self-contained HTML
+page**: a left-hand navigation of blocks; each block opens with the question it answers, the data
 sources, and 3–4 KPIs with deltas; then the charts; under every chart, the formula used and one
-sentence on why that chart type. Load a charting library from a CDN rather than hand-drawing.
-Green / amber / red mean good / watch / act and nothing else. Both light and dark themes must
-be readable. Charts read to one labelled scale. Use a heatmap for two categorical dimensions
-times one rate, ranked horizontal bars for long labels, a line with a dashed prior-period or
-benchmark reference for trends, stacked bars when the total matters as much as the split.
-**If you can't**, output the KPIs and tables here as markdown, block by block, with the same
-formula notes.
+sentence on why that chart type. Green / amber / red mean good / watch / act and nothing else.
+Both light and dark themes must be readable. Charts read to one labelled scale. Use a heatmap for
+two categorical dimensions times one rate, ranked horizontal bars for long labels, a line with a
+dashed prior-period or benchmark reference for trends, stacked bars when the total matters as much
+as the split. **If you can produce neither**, output the KPIs and tables in chat as markdown, block
+by block, with the same formula notes.
 
 ## The metrics catalog
 
 Ten blocks in priority order for a 30–1000 person company. Inside each block, metrics are in
-priority order. Each line is: metric — what it shows · *formula* · best view. Where no standard
-formula exists the line says so.
+priority order. Each line: metric — what it shows · *formula* · best view. Where no standard
+formula exists, the line says so.
 
 **1. Headcount & composition** (foundation — everything else segments on this)
 - Headcount — size at a point in time · *active employees on the date; FTE = contracted hours ÷ full-time hours* · line over time, stacked bar by department
@@ -149,7 +152,7 @@ formula exists the line says so.
 - Growth-plan coverage · *active plans ÷ headcount × 100* · progress bars with target
 - Time in level · *average months before promotion, per level* · bar per level
 
-**6. Compensation & pay equity** (EU Pay Transparency reporting from 2026)
+**6. Compensation & pay equity** (EU Pay Transparency Directive reporting applies from 2026 — check current national transposition before stating obligations)
 - Compa-ratio · *salary ÷ band midpoint* · histogram; in-range 0.90–1.10
 - Range penetration · *(salary − band min) ÷ (band max − band min)* · bar per level
 - Gender pay gap, unadjusted · *(median male − median female) ÷ median male × 100, per level* · bar with 5% threshold line
@@ -185,13 +188,16 @@ formula exists the line says so.
 - Labour cost / revenue · *total comp ÷ revenue × 100* · line
 - Plan vs actual · *actual ÷ planned per department* · bullet bars
 - Attrition forecast · *trend + seasonality + risk model, with an 80% band* · line with projection band
-- HR-to-employee ratio · *HR headcount ÷ total; typical around 1:50* · KPI
+- HR-to-employee ratio · *HR headcount ÷ total* · KPI
 - Skills coverage · *at required proficiency ÷ roles requiring the skill × 100* · heatmap team × skill
 
-Every chart needs the same six filters — department, manager, level, tenure, location,
-employment type — and a period comparison. If I can only give you one or two files, build
-blocks 1–4 plus the unadjusted pay gap from block 6; that's what companies our size actually
-use, and it's what an HRIS plus a performance tool can feed today.
+Every chart gets the same six filters — department, manager, level, tenure, location, employment
+type — and a period comparison. If the user can only give one or two files, build blocks 1–4 plus
+the unadjusted pay gap from block 6: that's what companies of 30–1000 people actually use, and
+what an HRIS plus a performance tool can feed today.
+
+Demographic blocks (9, and the gender cuts in 6) use only explicit, consented demographic columns.
+Never infer gender, ethnicity or age from names.
 
 ## Finish with
 

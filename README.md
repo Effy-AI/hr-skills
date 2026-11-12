@@ -7,6 +7,11 @@ No installation, no account, no tooling. Each prompt is a single file you copy a
 
 Built by [Effy AI](https://effy.ai).
 
+**Also a Claude plugin.** The same skills are packaged as the `effy-ai` plugin in
+[Effy-AI/claude-plugin](https://github.com/Effy-AI/claude-plugin), so they trigger on their own
+instead of being pasted. With Effy AI connected, they also read and save Effy records — the
+employee directory, 1:1s, growth plans, career tracks and knowledge documents.
+
 ## For HR and people leaders
 
 | Prompt | Library ID | What it does | Time |
@@ -15,8 +20,10 @@ Built by [Effy AI](https://effy.ai).
 | [Build an onboarding plan for a new hire](onboarding-plan.md) | `onboarding_plan` | Applies your documented process to one person: task list with one owner and a date each, welcome email, first-week schedule, draft 30/60/90, documents to copy. Then pushes it to your tools — Slack lists, Wrike, Monday.com, calendars — after you approve. Needs the document above to exist first. | 5 min |
 | [Analyze our review cycle](review-cycle-analysis.md) | `review_cycle_analysis` | Turns a pile of review files into one calibration-ready report. Calculates each angle on the file: managers who rate everyone at the top or give every report the same score, top and bottom ratings with no evidence, where employees and managers disagree. Top five findings first, then the managers to talk to before calibration and why. Plus themes, bias flags and a promotion shortlist capped at 15%. Asks whether you want a document for leadership or an interactive page to filter by team in the meeting. | 20–30 min |
 | [Build our people analytics dashboard](people-analytics-dashboard.md) | `people_analytics_dashboard` | Checks which of your connected tools hold people data, tells you what each export would unlock, then builds one dashboard — headcount, attrition, engagement, performance, pay equity and more — with the formula under every chart. Builds a labelled sample version if you have no data yet. | 15–30 min |
-| [Build a career track](career-track-builder.md) | `career_track_builder` | Interviews you, then builds one function's level ladder and competency matrix — including the anti-patterns and sideways moves most frameworks leave blank. | 30–40 min |
+| [Build or change our career framework](build-career-framework.md) | `build_career_framework` | Builds or changes career tracks, levels and the competency matrix — anti-patterns and sideways moves included — and proposes who sits on which level. Every change shown as a diff; saves to Effy AI after approval if connected. | 30–40 min |
 | [Write our employee handbook](employee-handbook.md) | `employee_handbook` | Researches your company from the web and your connected tools, interviews you on the things nobody publishes, then writes a first usable handbook — every fact sourced, every gap marked, legal sections flagged per country. Saves it to your wiki or Drive. | 30–45 min |
+| [Optimize our review forms](review-form-optimizer.md) | `review_form_optimizer` | Audits your review forms against last cycle's answers — answer length, non-answers, blanket top scores — and rewrites the questions, old next to new. | — |
+| [Audit our goal system](goal-system-audit.md) | `goal_system_audit` | Reads your goal or KPI trackers and review comments, shows how goals are really set, scored and updated, and ranks what to change first. | — |
 
 ## For managers
 
@@ -24,7 +31,8 @@ Built by [Effy AI](https://effy.ai).
 | --- | --- | --- | --- |
 | [Prep for a 1:1](one-on-one-prep.md) | `one_on_one_prep` | Reads your last five 1:1s with someone, surfaces the commitments you both forgot, and gives you an agenda and four questions worth actually asking. | 2 min |
 | [Find the themes in my 1:1 notes](one-on-one-themes.md) | `one_on_one_themes` | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
-| [Audit my 1:1 cadence](one-on-one-cadence-audit.md) | `one_on_one_cadence_audit` | Counts the 1:1s that actually got scheduled with each direct report over the last three months — dates, days since the last one, longest gap, implied cadence. Read-only. | 5 min |
+| [Write up my 1:1](one-on-one-debrief.md) | `one_on_one_debrief` | Turns a recording, transcript or rough notes from a 1:1 into structured notes: what was discussed, decided, who owes what by when, and what to pick up next time. | — |
+| [Build a growth plan](growth-plan-builder.md) | `growth_plan_builder` | Drafts a growth plan for one person from their career level, reviews, 1:1s and goals — two or three gaps, actions with owners and dates. | — |
 
 ## For everyone
 
@@ -40,10 +48,11 @@ Built by [Effy AI](https://effy.ai).
 | [Write our HR team's AI usage policy](hr-ai-usage-policy.md) | `hr_ai_usage_policy` | Writes your team's AI usage policy — one page of plain-language rules that push adoption as much as they restrict it, shaped by where your employees and candidates sit. | 15 min |
 
 The two onboarding prompts are a pair, and the order matters. **Document our onboarding
-process** writes `processes/onboarding.md` once, and fills gaps with suggestions you accept or
-cut. **Build an onboarding plan** then instantiates that document for each new hire, and invents
-nothing — if the process document doesn't say who owns a task, it flags it rather than guessing.
-Run the first one once. Run the second one per hire.
+process** writes down how onboarding actually runs, once — saved where you keep HR documents,
+and in Effy AI's knowledge if you use it. **Build an onboarding plan** then applies that document
+to each new hire, and invents nothing — if the process document doesn't say who owns a task, it
+flags it rather than guessing. If there's no process document yet, it offers to run the first
+prompt. Run the first one once. Run the second one per hire.
 
 ## How to use one
 
@@ -63,12 +72,11 @@ questions, fall back to copy and paste.
 
 ## Running a review cycle with these
 
-The review prompt needs **ten minutes of setup from HR before you send it out.** Its
-`SECTION 2` has one empty block per review type — self, manager, upward, peer. Paste the exact
-questions from each of your review forms into its block — word for word, in the same order they
-appear — and swap the values block for your own competency framework, or delete it. A filled
-block means the AI uses those questions and doesn't ask; an empty one means it asks each person
-for their form.
+The review prompt needs **ten minutes of setup from HR before you send it out.** Put the exact
+questions from each review form — self, manager, upward, peer, word for word and in order —
+and your values or competency framework in one shared place: a wiki page, a drive folder, or the
+cycle announcement itself. The prompt looks for them there (and in your review system, if it's
+connected) before asking anyone to paste their form.
 
 That step is the whole difference between a neat demo and a review done in 15 minutes. If the
 questions match the form, people paste answers straight across. If they don't, everyone has to
@@ -122,7 +130,8 @@ GDPR compliance at your company before a whole review cycle goes through it.
 
 MIT licensed. Fork the repository, edit the prompts to match how your company actually works,
 and point your team at your copy. Nothing here phones home — these are plain text files, and
-Effy AI never sees your conversation or your data.
+Effy AI never sees your conversation or your data. The one exception is your choice: if you
+connect Effy AI, some prompts offer to save results there, and only after you approve them.
 
 ## Contributing
 

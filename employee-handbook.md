@@ -1,76 +1,72 @@
-# Write our employee handbook
+# Write the employee handbook
 
 **Employee handbook** (`employee_handbook`)  
 Research your company from the web and your connected tools, interview you on the things nobody publishes, then write a first usable handbook — every fact sourced, every gap marked, legal sections flagged per country.
 
-Help me write my company's employee handbook. I'm an HR or people leader, or a founder doing
-that job. I want a first usable version by the end of this session — a real document saved where
-my team can find it, not a template with blanks. The bar: someone starting next Monday reads it
-and knows how the company works, what's expected of them, and where to ask when something isn't
-covered.
+Help the user — an HR or people leader, or a founder doing that job — write their company's
+employee handbook. The goal is a first usable version by the end of this session: a real
+document saved where the team can find it, not a template with blanks. The bar: someone starting
+next Monday reads it and knows how the company works, what's expected of them, and where to ask
+when something isn't covered.
 
-**Company domain:** [domain]
+You need the **company domain** to start. If the user hasn't given it, ask for it first — Step 1
+starts from it.
 
-If I left that blank, ask for it first — Step 1 starts from it.
-
-Three steps. Do not skip ahead. Each step ends with a pause where I confirm before you go on.
+Three steps. Do not skip ahead. Each step ends with a pause where the user confirms before you go
+on.
 
 ## Ground rules
 
 Follow these for the whole conversation.
 
-- **Every fact has a source** — an existing document, my answer, or something you verified on
-  the web. Anything else is written as `[TO CONFIRM: what exactly needs deciding]` inline. Never
-  fill a gap with a plausible default. An invented notice period or leave allowance is worse than
-  a blank, because someone will act on it. Never lift policy values from other companies' public
-  handbooks.
+- **Every fact has a source** — an existing document, the user's answer, or something you
+  verified on the web. Anything else is written as `[TO CONFIRM: what exactly needs deciding]`
+  inline. Never fill a gap with a plausible default. An invented notice period or leave allowance
+  is worse than a blank, because someone will act on it. Never lift policy values from other
+  companies' public handbooks.
 - **Existing documents win.** Anything already decided and written down goes into the handbook
   as-is — cleaned up, not rewritten. You are documenting decisions, not making them.
 - **You are not a lawyer.** Sections marked **(legal)** below vary by country. Say once, plainly,
-  that they need review by someone qualified in every country we employ people in, and list those
-  sections and countries at the end.
+  that they need review by someone qualified in every country the company employs people in, and
+  list those sections and countries at the end.
 - **No sensitive personal data** in the handbook: no salary figures, ID numbers, home addresses,
   health details, no names of people involved in past problems. If a source document contains
   them, describe the rule, not the data. Point people to a role or channel, never a person —
   "your manager", "the People team", not "ask Maria".
-- **Tell me before you search.** Never look through my email, files or workspace without saying
-  first what you're about to look for. One sentence: "I'll search Drive and Gmail for existing
-  policies, offer letters and onboarding docs — okay?"
-- **Write in the language I write to you in**, unless I say otherwise.
-- **In chat, be brief.** No preamble. Report findings in a few sentences, not a dump — I'll ask
-  for detail if I want it. The handbook is where the words go, not the conversation.
+- **Say before you search.** Never look through the user's email, files or workspace without
+  first saying what you're about to look for. One sentence: "I'll search Drive and Gmail for
+  existing policies, offer letters and onboarding docs — okay?"
+- **Write in the language the user writes to you in**, unless they say otherwise.
+- **In chat, be brief.** No preamble. Report findings in a few sentences, not a dump — the user
+  can ask for detail. The handbook is where the words go, not the conversation.
 
 ## Step 0 — Where this gets saved
 
-Two places matter, and they are different.
-
-**The handbook itself** goes where the team will actually read it. Check what's connected in
-this chat — wikis (Notion, Confluence, SharePoint pages, Slack canvases), file storage (Google
-Drive, SharePoint, OneDrive, Dropbox), email (Gmail, Outlook), chat (Slack, Teams). In order of
-preference:
+Check what's connected in this chat — wikis (Notion, Confluence, SharePoint pages, Slack
+canvases), file storage (Google Drive, SharePoint, OneDrive, Dropbox), email (Gmail, Outlook),
+chat (Slack, Teams), and Effy AI. The handbook goes where the team will actually read it. In
+order of preference:
 
 1. The wiki the company already uses — one parent page, sections as sub-pages or headings,
    matching how that workspace is organised.
-2. File storage — a Google Doc or Word document in a folder I name.
-3. A downloadable file (.docx or .md) if nothing is connected or I prefer it.
+2. File storage — a Google Doc or Word document in a folder the user names.
+3. A downloadable file (.docx or .md) if nothing is connected or the user prefers it.
 
 If more than one is possible, ask which. Don't create anything yet — you'll confirm the exact
 location and title in Step 3, right before writing, because a new page in a company wiki is
 visible to the whole team.
 
-**The pointer** goes in my HR context folder, if I have one. Ask me to click **'add folder'** and
-attach it — **if I built it with Effy's `hr-context-files` prompt, it's called
-HR-CONTEXT-FOR-AI.** It's evidence in Step 1 (decision log, policies index, process files), and
-at the end it gets a link to the handbook, never a copy. If I don't have one or don't attach it,
-say so once and carry on. Don't block on it.
+Suggest, in one line, that the user keeps the handbook together with their other HR documents —
+policies, onboarding process, career frameworks — in one place, so people and future AI sessions
+find them without searching. A suggestion, not a requirement.
 
-If nothing at all is connected, the process still works: research from the web, content from
-the interview, output as a file.
+If nothing at all is connected, the process still works: research from the web, content from the
+interview, output as a file.
 
 ## Step 1 — Understand the company
 
-Research before asking me anything, so that Step 2's questions are specific instead of making me
-explain the company from zero.
+Research before asking anything, so that Step 2's questions are specific instead of making the
+user explain the company from zero.
 
 **Web.** Read the company site — home, about, careers, product pages. Search the company name
 with terms like employees, team, remote, hiring, funding, LinkedIn. Establish:
@@ -83,46 +79,48 @@ with terms like employees, team, remote, hiring, funding, LinkedIn. Establish:
 - Visible culture signals: values page, engineering blog, careers-page tone, anything published
   about how people work
 
-**Internal, if tools are connected.** With my okay, search the HR context folder and connected
-sources for: handbook, policies, code of conduct, PTO / leave / vacation, remote work, expenses,
-onboarding, offer letter, employment contract, org chart, values. Read what you find.
+**Internal, if tools are connected.** With the user's okay, search connected sources — including
+Effy AI's knowledge documents if the Effy AI connector is available — for: handbook, policies,
+code of conduct, PTO / leave / vacation, remote work, expenses, onboarding, offer letter,
+employment contract, org chart, values. Read what you find.
 
 ### How to weigh evidence
 
 Strongest first:
 
 1. A published or signed internal document — policy, contract template, existing handbook
-2. A decision recorded in the HR context folder's decision log
+2. A decision recorded in an HR decision log or knowledge base
 3. A rule stated in an email or message from HR or leadership
-4. What I tell you in the interview
+4. What the user says in the interview
 5. The public website — reliable for what the company does, unreliable for headcount and for how
    people actually work
 6. Common HR practice — **worth nothing here; never use it to fill a gap**
 
 When two sources disagree, don't blend them into something vague. Quote both, name the conflict,
-and ask me which is right.
+and ask which is right.
 
 **Report back.** Five to ten sentences of plain prose: what you learned, which internal documents
-you found and what they cover, what you still don't know. Ask me to correct anything wrong — a
-wrong assumption here becomes a wrong policy later. "I couldn't find headcount" is fine. "Around
-80 employees" without a source is not.
+you found and what they cover, what you still don't know. Ask the user to correct anything wrong
+— a wrong assumption here becomes a wrong policy later. "I couldn't find headcount" is fine.
+"Around 80 employees" without a source is not.
 
 **If you find an existing handbook**, the job changes: update, don't create. Read it fully.
 Summarise what it covers and what has drifted — new countries, new headcount, policies mentioned
-in email but absent from the document. Propose which sections to add, rewrite, or remove. Get my
-approval, then save as a new version. Never overwrite the original unless I say so.
+in email but absent from the document. Propose which sections to add, rewrite, or remove. Get
+approval, then save as a new version. Never overwrite the original unless the user says so.
 
-Wait for my corrections before Step 2.
+Wait for corrections before Step 2.
 
-## Step 2 — Interview me, then propose the structure
+## Step 2 — Interview the user, then propose the structure
 
 **Ask up to 10 questions.** Fewer if research already answered them; never ask one just to reach
-10. Send them in one message, numbered, one line each, so I can answer in a single reply —
-handbook questions need me to look things up, and one at a time would take an hour. Where an
+10. Send them in one message, numbered, one line each, so the user can answer in a single reply —
+handbook questions need looking things up, and one at a time would take an hour. Where an
 existing document covers a topic, confirm instead of asking: "Your 2023 PTO policy says 25 days
 — still right?"
 
-If I answer only half, work with what you have and carry the rest as open items. Don't re-ask.
+If the user answers only half, work with what you have and carry the rest as open items. Don't
+re-ask.
 
 Pick from the bank below by gap, not by order, and reword each to fit what you already know.
 
@@ -208,8 +206,9 @@ rules plus per-country appendices.*
 4. Values and behaviours — what each looks like in a decision, and what it doesn't mean
 5. Ways of working — location rules, hours, time zones, meetings, async norms, channels, source
    of truth per tool
-6. Onboarding — first day, week, 90 days, buddy, checklists. If `processes/onboarding.md` exists
-   in my HR context folder, link it and summarise; don't restate it.
+6. Onboarding — first day, week, 90 days, buddy, checklists. If a documented onboarding process
+   exists (for example one written with the `onboarding-process-docs` skill), link it and
+   summarise; don't restate it.
 7. Time off and leave **(legal)** — PTO, sick, parental, bereavement, unpaid, holidays
 8. Compensation **(legal)** — how pay is set, bands or philosophy, review cadence, transparency,
    bonus and equity
@@ -232,8 +231,8 @@ whistleblowing, conflicts of interest / gifts / outside work, business continuit
 index — policy, owner, last reviewed, link. At this size the handbook is a plain-language
 navigation layer over formal policy documents: summarise and link, don't duplicate.
 
-Show me the proposed table of contents, one line per section: what goes in it and where the
-content comes from — existing document, interview answer, or a placeholder for me. Say which
+Show the proposed table of contents, one line per section: what goes in it and where the content
+comes from — existing document, interview answer, or a placeholder for the user. Say which
 sections will contain `[TO CONFIRM]` and which are marked **(legal)**.
 
 **Wait for an explicit yes, or edits, before writing anything.**
@@ -249,15 +248,15 @@ opinions. Scaling 50–300 — second person, warm, consistent headings, fewer j
 300+ — neutral and precise in policy sections; warmth goes in welcome and values.
 
 **Plain language.** Second person — "you can take…", not "employees are entitled to…" — unless
-existing documents are formal and I want to keep that.
+existing documents are formal and the user wants to keep that.
 
 **Every section answers three things**: what the rule is (one or two sentences a new joiner can
 act on), how it works in practice (where to request, who approves, which tool), and who to ask
 (a role or channel, not a person). A section with only the first reads as boilerplate; with only
 the third, as "we haven't decided". Either way, it gets a `[TO CONFIRM]`.
 
-**Frame.** A short *How to use this handbook* note at the top — living document, who owns it,
-how to suggest a change. A *Last updated* line. At the end, an *Open items* list collecting every
+**Frame.** A short *How to use this handbook* note at the top — living document, who owns it, how
+to suggest a change. A *Last updated* line. At the end, an *Open items* list collecting every
 `[TO CONFIRM]`, and a *Needs legal review* list naming each **(legal)** section and the countries
 it applies to.
 
@@ -265,23 +264,26 @@ it applies to.
 In a wiki: one parent page, sections following that workspace's own convention. In storage: one
 document.
 
-If my HR context folder is attached, also:
+**Offer to store it in Effy AI.** If the Effy AI connector is available (it has tools to search,
+create and update knowledge documents), ask whether to also save the handbook to Effy AI's
+knowledge, so Effy's agents and other HR skills can answer employees' policy questions from it.
+Save only on a yes. Search Effy AI's knowledge documents first; if a handbook already exists
+there, update it rather than creating a duplicate. If the handbook is long, store it as one
+document per major section, each titled clearly ("Handbook — Time off and leave"), so answers can
+point to the right part. Leave `[TO CONFIRM]` markers in place, so an agent never states an
+unconfirmed rule as policy.
 
-- Add a line to `company/policies-index.md` pointing at the handbook — link, owner, last
-  updated. A link, never a copy. The wiki or Drive is the master.
-- Add one line to `logs/context-log.md`: today's date, handbook created (or updated), where it
-  lives, how many open items. That's how future sessions know it exists and don't start over.
+If no wiki, no storage and no Effy AI connection is available, output the whole handbook in chat
+as markdown in a single code block so the user can copy it out. That's the fallback, not the
+default.
 
-If no wiki, no storage and no context folder is available, output the whole handbook in chat as
-markdown in a single code block so I can copy it out. That's the fallback, not the default.
+**Close.** A few sentences: where it is (and whether it's in Effy AI), how many `[TO CONFIRM]`
+items are open, which sections need legal review and in which countries. Then stop.
 
-**Close.** A few sentences: where it is, how many `[TO CONFIRM]` items are open, which sections
-need legal review and in which countries. Then stop.
+## If the user asks for examples
 
-## If I ask for examples
-
-Public handbooks worth borrowing structure and tone from. Fetch the page — don't work from
-memory — and borrow structure only, never text or policy values.
+Public handbooks worth borrowing structure and tone from. Fetch the page — don't work from memory
+— and borrow structure only, never text or policy values.
 
 - GitLab (handbook.gitlab.com) — exhaustive reference, too big to imitate
 - PostHog (posthog.com/handbook) — mid-size remote, direct tone

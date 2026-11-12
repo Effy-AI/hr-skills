@@ -1,67 +1,74 @@
-# Create my HR context files
+# Set up the HR context
 
 **HR context files setup** (`hr_context_files`)  
 Build the folder structure, context files, and logs that future AI sessions run on — assembled from what can be verified about your company, not a generic template.
 
-Help me create my HR context files — the folder structure, context files, and logs that future
-AI sessions will run on. Built from what you can verify, not from a generic template.
+Build the context that makes future AI sessions useful without re-explaining the company every
+time: how HR works here, on what cadence, which decisions are already made, and where the real
+documents live. Built from what you can verify, not from a generic template.
 
-## Step 0 — Get the folder connected first
+**Explain in two or three lines what this is**, because the natural assumption is that you're
+about to duplicate the HRIS — and the user should resist that. In your own words:
 
-Before any research, ask me to click **'add folder'** and connect the folder where my AI context
-files should live. If I don't have one yet, ask me to create it and name it **HR-CONTEXT-FOR-AI**
-— a fixed name so every other HR prompt in this set can point at the same place instead of asking
-me to hunt for it each time.
+- It holds *context*, not records. Patterns, cadences, decisions and pointers — how the company
+  works, not who works there. Employee data stays in the HRIS.
+- It's what lets AI sessions and agents start with the company already understood.
+- Policies and templates are **linked**, never copied. There is one master of each document, and
+  it isn't here.
 
-Everything you build in Step 3 goes inside that folder. Without it, the structure lands in a
-scratch directory I'll never open again, and the next session starts from zero — which defeats
-the entire point of building context.
+## Step 0 — Where it will live
 
-**Explain to me, in two or three lines, what this folder is** — because the natural assumption is
-that you're asking me to duplicate my HRIS, and I'll resist that, correctly. Make these points in
-your own words:
+Two options, and they can be combined:
 
-- It holds *context*, not records. Patterns, cadences, decisions, and pointers — how we work, not
-  who works here. Employee data stays in the HRIS.
-- It's what makes future AI sessions useful without re-explaining the company every time.
-- Policies and templates are **linked**, never copied. There is one master of each document and it
-  is not in this folder.
+- **Effy AI's knowledge**, if the Effy AI connector is available — each context file becomes a
+  knowledge document, which Effy's agents and HR skills read automatically. Recommend this when
+  it's connected.
+- **One shared folder** the user picks (a connected folder, a drive, or a wiki space). Suggest
+  keeping all HR context and process documents together there, so every HR skill can find them
+  in one place.
 
-If I decline or no folder is available, say plainly that the structure will only exist in this
-chat and that I'll need to copy it out myself — then continue. Don't block on it.
+Ask once which the user wants. If neither is available, say the context will only exist in this
+chat and they'll need to copy it out — then continue. Don't block on it.
 
 ## Step 1 — Research
 
-Read my recent email, calendar, Drive, and Effy (whatever is connected) to learn:
+Read whatever is connected — recent email, calendar, drives, wiki, HR system, and Effy AI (employee
+directory, career tracks, review reports, existing knowledge documents) — to learn:
 
-- My company's size and structure.
-- The HR processes I actually run — reviews, hiring, onboarding, surveys.
+- The company's size and structure.
+- The HR processes actually run — reviews, hiring, onboarding, surveys, 1:1s, goals.
 - The cadence they run on.
 - The documents that already exist and where they live.
+- What's already written down as context (existing knowledge documents, process docs), so you
+  update rather than duplicate.
+
+Say before you search, in one sentence, what you're about to look through.
 
 ## Step 2 — Interview
 
-Ask me up to 10 questions, one at a time, to confirm what you found and fill gaps. Focus on:
+Up to 10 questions, one at a time, to confirm what you found and fill gaps. Focus on:
 
-- What I own vs. delegate.
-- Decisions already made that you should never re-open.
-- Which processes cause me the most work.
+- What the user owns vs. delegates.
+- Decisions already made that AI should never re-open.
+- Which processes cause the most work.
 
-**Show me the plan after this step before you build anything.**
+**Show the plan after this step — the list of files and one line on what each will say — before
+building anything.**
 
 ## Step 3 — Build
 
-Create this structure, with a README.md in every folder explaining what lives there, when to
-read it, and when to write to it:
+The context set:
 
-- **company/**: org-basics.md, hr-calendar.md, decision-log.md (seed it with decisions from
-  the interview), policies-index.md (pointers to the real documents in Drive — never copy
-  content)
-- **processes/**: one file per process I actually run, written from what you found, marked
-  [CONFIRMED] or [GUESS: verify] line by line
-- **OUTPUTS/**
-- **logs/**: context-log.md (first entry: today, workspace created), feedback-log.md (empty,
-  with a one-line header explaining what goes in it), and an empty context-reviews/ folder
+- **org-basics** — size, structure, locations, functions, how decisions get made
+- **hr-calendar** — the recurring HR events and their cadence (review cycles, surveys, planning)
+- **decision-log** — seeded with decisions from the interview; one line each, dated, with the
+  reason
+- **policies-index** — pointers to the real documents (link, owner, last updated); never copied
+  content
+- **one process file per HR process actually run** — written from what you found, marked
+  `[CONFIRMED]` or `[GUESS: verify]` line by line. Where a dedicated skill exists for a process
+  (`onboarding-process-docs` for onboarding, `employee-handbook`, `hr-ai-usage-policy`), say so and
+  offer to run it rather than writing a thinner version here.
 
 Rules for every file:
 
@@ -69,14 +76,28 @@ Rules for every file:
 - Patterns, not raw notes.
 - No employee names anywhere.
 
-## Step 4 — Rooms
+**Saving:**
 
-For each HR job I confirmed in the interview, prepare a "project pack" as a file in
-OUTPUTS/project-packs/:
+- **To Effy AI's knowledge** — one knowledge document per file, titled clearly ("HR context —
+  Decision log", "HR process — Review cycle"). Search existing knowledge documents first and
+  update a matching one rather than creating a second. Show the list of documents to be created
+  or updated, and write after an explicit yes.
+- **To a folder** — the files as markdown, plus a short `README.md` saying what lives there, when
+  to read it, and when to update it. Put process files in a `processes/` subfolder.
+
+## Step 4 — Project packs (optional)
+
+Offer this in one line. For each HR job the user confirmed in the interview, prepare a "project
+pack" they can use to set up a dedicated AI project:
 
 - The project name.
 - The instructions to paste.
-- What I should upload.
-- 3–5 memory facts to save.
+- What to upload or connect.
+- 3–5 facts worth saving to the project's memory.
 
-I will create the projects in the app myself and paste from your packs.
+The user creates the projects themselves and pastes from the packs.
+
+## Finish
+
+Two or three lines: what was created or updated and where, how many `[GUESS: verify]` lines are
+left to check, and the one process file that would be most worth writing properly next.
