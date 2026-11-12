@@ -1,6 +1,6 @@
 # Find the themes across 1-on-1s
 
-**1-on-1 theme analysis** (`one_on_one_themes`)  
+**1-on-1 theme analysis** (`one_on_one_analysis`)  
 Read months of 1-on-1 notes at once and surface the patterns — recurring topics, the commitments you keep making and not keeping, and the people showing signals worth attention.
 
 The manager has been running 1:1s for months and the notes are piling up. They want to know what

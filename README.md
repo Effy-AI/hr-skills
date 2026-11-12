@@ -30,7 +30,7 @@ employee directory, 1:1s, growth plans, career tracks and knowledge documents.
 | Prompt | Library ID | What it does | Time |
 | --- | --- | --- | --- |
 | [Prep for a 1:1](one-on-one-prep.md) | `one_on_one_prep` | Reads your last five 1:1s with someone, surfaces the commitments you both forgot, and gives you an agenda and four questions worth actually asking. | 2 min |
-| [Find the themes in my 1:1 notes](one-on-one-themes.md) | `one_on_one_themes` | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
+| [Find the themes in my 1:1 notes](one-on-one-analysis.md) | `one_on_one_analysis` | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
 | [Write up my 1:1](one-on-one-debrief.md) | `one_on_one_debrief` | Turns a recording, transcript or rough notes from a 1:1 into structured notes: what was discussed, decided, who owes what by when, and what to pick up next time. | — |
 | [Build a growth plan](growth-plan-builder.md) | `growth_plan_builder` | Drafts a growth plan for one person from their career level, reviews, 1:1s and goals — two or three gaps, actions with owners and dates. | — |
 
