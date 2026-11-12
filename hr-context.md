@@ -21,7 +21,7 @@ because the natural assumption is that you're about to copy their HRIS:
   it isn't here.
 - It's what lets every later AI session skip the "let me explain our company" part.
 
-The document set, templates and rules are in the appendix at the end of this prompt — read it before Step 3.
+The document set, templates and review prompt are in the **Document set** section at the end — use it in Step 3.
 
 ## Step 0 — Where it will live
 
@@ -78,7 +78,7 @@ and what it rests on, and which ones are new versus updates. Wait for a yes.
 
 ## Step 3 — Build the documents
 
-Use the set and templates in the appendix: the workspace map, the AI usage rules
+Use the set and templates in the **Document set** section below: the workspace map, the AI usage rules
 pointer, `company/` facts, one `processes/` document per process actually run, and the two logs.
 Build only what the evidence and interview support — a process the company doesn't run gets no
 document, and a section with nothing real in it is left out, not padded.
@@ -107,7 +107,7 @@ Show the final list of documents to be created or updated, then save after an ex
   so they sort and read as a workspace: `HR context — README`, `HR context — company/org-basics`,
   `HR context — processes/review-cycle`, and so on. Search first and update a matching document
   rather than creating a second. Logs are documents too, so corrections stay with the context.
-- **To a folder** — the same set as markdown files in the structure from the appendix, with a
+- **To a folder** — the same set as markdown files in the structure from the **Document set** section, with a
   `README.md` in every folder.
 
 Then add the first line to the context log: today's date, what was created.
@@ -121,7 +121,7 @@ Offer each in one line; build only on a yes.
   instructions to paste, what to upload each cycle, and 3–5 facts for the project's memory. One
   room per job, never one giant "HR" project — mixed context degrades every task it touches.
 - **Weekly context review** — a scheduled task that reads the logs and recent outputs and proposes
-  fixes. The prompt is in the appendix. It proposes; it never edits on its own.
+  fixes. The prompt is in the **Document set** section below. It proposes; it never edits on its own.
 
 ## Finish
 
@@ -130,13 +130,10 @@ waiting for the user, and the one process document most worth writing properly n
 of the habit that keeps this alive: when they correct the AI on something non-trivial, add a dated
 line to the feedback log.
 
----
+## Document set
 
-# Appendix — document set, templates and review prompt
 
-Contents: 1. The set · 2. Templates · 3. Project pack · 4. Weekly review prompt
-
-## 1. The set
+### 1. The set
 
 ```
 HR-CONTEXT-FOR-AI/
@@ -174,7 +171,7 @@ In Effy AI knowledge, each file becomes one knowledge document titled `HR contex
 (e.g. `HR context — company/decision-log`). `OUTPUTS/` and `context-reviews/` stay in a folder if
 the user has one; otherwise skip them.
 
-## 2. Templates
+### 2. Templates
 
 Fill only what the evidence supports. Mark inferred lines `[CONFIRMED]` / `[GUESS: verify]`.
 
@@ -297,7 +294,7 @@ One dated line per non-trivial correction: what the AI got wrong, and what's tru
 - <YYYY-MM-DD> — Said the review cycle runs in January. True: it runs in July. Fix: hr-calendar.
 ```
 
-## 3. Project pack
+### 3. Project pack
 
 ```markdown
 # Project pack — <job, e.g. Review Cycle>
@@ -311,7 +308,7 @@ Facts for project memory (3–5): <rating scale; cycle timing; who calibrates; �
 Rooms to offer, only for jobs the user actually runs: Review Cycle, Handbook & Policy, Pay,
 Hiring, Onboarding, Surveys, HR Helpdesk.
 
-## 4. Weekly review prompt
+### 4. Weekly review prompt
 
 For a scheduled weekly task (in the Claude desktop app: Settings → Scheduled tasks → New):
 
