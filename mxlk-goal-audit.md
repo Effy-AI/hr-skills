@@ -12,26 +12,27 @@ running this prompt is on the HR or leadership side. The output is for them, not
 whose goals are in the files. Be direct about weaknesses in the process; the team decides what to
 share and with whom.
 
-## What we already know about the process
+## Starting hypotheses
 
-Use this as the starting picture. Confirm or contradict it with the files, and say which.
+Treat these as hypotheses about how the process usually works in spreadsheets. Confirm or contradict
+each one with the files, and say which.
 
 - Each employee has one annual KPI file with goals set for the whole year. They update progress and
   comments every month and send the file by a monthly deadline (around the 20th).
-- An external consultant collects the files, reviews them one by one, chases late ones, and
-  consolidates them by hand into a leadership-level Excel organized by objectives and actions.
-- Employees can send their file before their manager has reviewed it. Managers sometimes correct
-  progress afterwards (an example given: an employee reported 80%, the manager said 50%).
-- Leadership has no live view. Executives see where goals stand only at the monthly meeting, and
-  even then without exact percentages, so goals at risk are found late.
-- Known errors: empty fields, progress that doesn't match how a shared goal was split (three
-  people each own a third, one reports 100% of the whole), and totals calculated by hand.
+- The files are collected and consolidated into a leadership-level Excel organized by objectives
+  and actions.
+- Manager review may happen after the file is sent rather than before, so reported progress can
+  change later.
+- Leadership reviews goal status at a monthly meeting.
+- Errors to look for: empty fields, progress that doesn't match how a shared goal was split (for
+  example three people each own a third and one reports 100% of the whole), and totals calculated
+  by hand.
 - There is one comment column. The team wants a comment required when a goal is at risk, behind,
   or discontinued — not on every on-track goal.
 - Company goals cascade to departments, teams and individuals. A rule of thumb of 3–5 goals per
-  person is in use, but cascading leaves some people following 30+ goals or subgoals. Some people
-  (often clerical or support roles) join a shared goal for one task and then leave it.
-- Departments run goals differently. Operational teams do repetitive work and have few goals.
+  person is in use; check whether cascading leaves some people following far more goals or
+  subgoals than that, and whether some people join a shared goal for one task and then leave it.
+- Departments may run goals differently; operational teams with repetitive work may have few goals.
 - The target process: individual contributors update by about the 18th–19th, managers review and
   submit over the next two days, department heads confirm, and leadership gets a dashboard by the
   21st–22nd showing progress by department and which goals are at risk, with the option to drill
@@ -72,8 +73,8 @@ what you're about to read.
 
 Then ask, in one message, whether they can also add any of these (each is optional):
 
-- the consolidated leadership report the consultant prepares (any month)
-- the consultant's list of recurring problems with the files
+- the consolidated leadership report (any month)
+- any list of recurring problems with the files kept by whoever consolidates them
 - the year's performance evaluation forms, if they want goal results compared with review scores
 
 Don't ask for an employee list or org chart; it's in the file headers.
@@ -149,8 +150,8 @@ with no evidence gets "no evidence in the files".
     files, and whether the reports' progress adds up to the manager's. Goals with no visible link to
     a department or company goal.
 11. **Goals vs reviews** (only if evaluation forms are included). Compare goal results with the
-    self and evaluator scores, especially the Productivity and Reliability items ("knows KPIs and
-    strives to achieve them", "completes KPI updates on a timely basis"). Flag high review scores
+    self and evaluator scores, especially any items about knowing and pursuing KPIs or updating
+    them on time. Flag high review scores
     next to weak goal results or late KPI files, and the reverse.
 
 Don't judge individual performance. Write findings as process gaps ("phases due in Q3 have no
@@ -173,7 +174,7 @@ year, and what can wait for the first review after a quarter. Cover, where the f
 - what leadership should see by default (progress by department, phases at risk with their reason)
   and what stays one click down (individual comments and update history)
 
-Fit it to the company: MXLK is moving from spreadsheets with one external controller, so don't
+Fit it to the company: MXLK is moving goal tracking out of spreadsheets, so don't
 propose everything at once. If a recommendation depends on what a specific goals tool can do, mark
 it "check the tool" instead of assuming.
 
@@ -200,7 +201,7 @@ spreadsheet.
 
 **Survey assumptions for managers**
 
-**Open questions** (only what the files leave open — for the consultant, department heads or leadership)
+**Open questions** (only what the files leave open — for whoever consolidates the files, department heads or leadership)
 ```
 
 Then build a spreadsheet the team can filter, with one tab each for: file inventory, org structure,
@@ -217,6 +218,6 @@ replaced by role and department, and no individual scores.
 - Mark what you inferred (a department, a level, which phase a merged comment refers to) as
   *(inferred)*.
 - Critique the process, not the people.
-- Leave pay out of it. Some goals are about compensation projects; audit them like any other goal,
+- Leave pay out of it. If some goals are about compensation projects, audit them like any other goal,
   but don't comment on pay levels or structure. If the files link goal results to bonuses or
   raises, note the link and flag that any change needs the company's compensation owner.
