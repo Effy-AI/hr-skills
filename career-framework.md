@@ -1,6 +1,6 @@
 # Career framework — build it or change it
 
-**Build career framework** (`build_career_framework`)  
+**Build career framework** (`career_framework`)  
 Build or change career tracks, levels, the competency matrix and level assignments in Effy AI — every change shown as a diff, written only after approval.
 
 One skill for the career framework: the tracks people grow along, the levels on each track, the
@@ -368,7 +368,7 @@ empty. Name what would most improve the framework next — usually the anti-patt
 sideways growth opportunities. End with:
 
 ```
-Generated from: build-career-framework
+Generated from: career-framework
 Company: [name · domain · headcount]
 Path: [build | change]
 Date: [today]

@@ -16,13 +16,13 @@ employee directory, 1:1s, growth plans, career tracks and knowledge documents.
 
 | Prompt | Library ID | What it does | Time |
 | --- | --- | --- | --- |
-| [Document our onboarding process](onboarding-process-docs.md) | `onboarding_process_docs` | Works out how onboarding actually runs here — from your email history and a short interview — then writes it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire. | 15–20 min |
+| [Document our onboarding process](onboarding-process.md) | `onboarding_process` | Works out how onboarding actually runs here — from your email history and a short interview — then writes it up as a checklist per owner: HR, hiring manager, buddy, IT, new hire. | 15–20 min |
 | [Build an onboarding plan for a new hire](onboarding-plan.md) | `onboarding_plan` | Applies your documented process to one person: task list with one owner and a date each, welcome email, first-week schedule, draft 30/60/90, documents to copy. Then pushes it to your tools — Slack lists, Wrike, Monday.com, calendars — after you approve. Needs the document above to exist first. | 5 min |
 | [Analyze our review cycle](review-cycle-analysis.md) | `review_cycle_analysis` | Turns a pile of review files into one calibration-ready report. Calculates each angle on the file: managers who rate everyone at the top or give every report the same score, top and bottom ratings with no evidence, where employees and managers disagree. Top five findings first, then the managers to talk to before calibration and why. Plus themes, bias flags and a promotion shortlist capped at 15%. Asks whether you want a document for leadership or an interactive page to filter by team in the meeting. | 20–30 min |
 | [Build our people analytics dashboard](people-analytics-dashboard.md) | `people_analytics_dashboard` | Checks which of your connected tools hold people data, tells you what each export would unlock, then builds one dashboard — headcount, attrition, engagement, performance, pay equity and more — with the formula under every chart. Builds a labelled sample version if you have no data yet. | 15–30 min |
-| [Build or change our career framework](build-career-framework.md) | `build_career_framework` | Builds or changes career tracks, levels and the competency matrix — anti-patterns and sideways moves included — and proposes who sits on which level. Every change shown as a diff; saves to Effy AI after approval if connected. | 30–40 min |
+| [Build or change our career framework](career-framework.md) | `career_framework` | Builds or changes career tracks, levels and the competency matrix — anti-patterns and sideways moves included — and proposes who sits on which level. Every change shown as a diff; saves to Effy AI after approval if connected. | 30–40 min |
 | [Write our employee handbook](employee-handbook.md) | `employee_handbook` | Researches your company from the web and your connected tools, interviews you on the things nobody publishes, then writes a first usable handbook — every fact sourced, every gap marked, legal sections flagged per country. Saves it to your wiki or Drive. | 30–45 min |
-| [Optimize our review forms](review-form-optimizer.md) | `review_form_optimizer` | Audits your review forms against last cycle's answers — answer length, non-answers, blanket top scores — and rewrites the questions, old next to new. | — |
+| [Optimize our review forms](review-form-audit.md) | `review_form_audit` | Audits your review forms against last cycle's answers — answer length, non-answers, blanket top scores — and rewrites the questions, old next to new. | — |
 | [Audit our goal system](goal-system-audit.md) | `goal_system_audit` | Reads your goal or KPI trackers and review comments, shows how goals are really set, scored and updated, and ranks what to change first. | — |
 
 ## For managers
@@ -32,19 +32,19 @@ employee directory, 1:1s, growth plans, career tracks and knowledge documents.
 | [Prep for a 1:1](one-on-one-prep.md) | `one_on_one_prep` | Reads your last five 1:1s with someone, surfaces the commitments you both forgot, and gives you an agenda and four questions worth actually asking. | 2 min |
 | [Find the themes in my 1:1 notes](one-on-one-analysis.md) | `one_on_one_analysis` | Looks across months of 1:1s at once: what keeps coming up, what you keep promising and not doing, and who's showing signs worth paying attention to. | 10 min |
 | [Write up my 1:1](one-on-one-debrief.md) | `one_on_one_debrief` | Turns a recording, transcript or rough notes from a 1:1 into structured notes: what was discussed, decided, who owes what by when, and what to pick up next time. | — |
-| [Build a growth plan](growth-plan-builder.md) | `growth_plan_builder` | Drafts a growth plan for one person from their career level, reviews, 1:1s and goals — two or three gaps, actions with owners and dates. | — |
+| [Build a growth plan](growth-plan.md) | `growth_plan` | Drafts a growth plan for one person from their career level, reviews, 1:1s and goals — two or three gaps, actions with owners and dates. | — |
 
 ## For everyone
 
 | Prompt | Library ID | What it does | Time |
 | --- | --- | --- | --- |
-| [Draft a performance review](performance-review-draft.md) | `performance_review_draft` | Works out your role from your connected tools, then drafts whichever review you need — self, manager review of a direct report, upward review of your manager, or peer review — every claim tied to a citation, gaps flagged instead of filled. Run once per review. | 15 min |
+| [Draft a performance review](review-draft.md) | `review_draft` | Works out your role from your connected tools, then drafts whichever review you need — self, manager review of a direct report, upward review of your manager, or peer review — every claim tied to a citation, gaps flagged instead of filled. Run once per review. | 15 min |
 
 ## Setting up your HR workspace
 
 | Prompt | Library ID | What it does | Time |
 | --- | --- | --- | --- |
-| [Create my HR context files](hr-context-files.md) | `hr_context_files` | Builds the folder structure, context files, and logs that future AI sessions run on — assembled from what can be verified about your company, not a generic template. | 20–30 min |
+| [Create my HR context files](hr-context.md) | `hr_context` | Builds the folder structure, context files, and logs that future AI sessions run on — assembled from what can be verified about your company, not a generic template. | 20–30 min |
 | [Write our HR team's AI usage policy](hr-ai-usage-policy.md) | `hr_ai_usage_policy` | Writes your team's AI usage policy — one page of plain-language rules that push adoption as much as they restrict it, shaped by where your employees and candidates sit. | 15 min |
 
 The two onboarding prompts are a pair, and the order matters. **Document our onboarding
@@ -63,7 +63,7 @@ conversation. This is the reliable way.
 
 ```
 Follow the instructions at this link:
-https://raw.githubusercontent.com/Effy-AI/hr-skills/main/onboarding-process-docs.md
+https://raw.githubusercontent.com/Effy-AI/hr-skills/main/onboarding-process.md
 ```
 
 Quicker, but less dependable — depending on the model and your settings it may summarise the

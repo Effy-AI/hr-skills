@@ -207,7 +207,7 @@ rules plus per-country appendices.*
 5. Ways of working — location rules, hours, time zones, meetings, async norms, channels, source
    of truth per tool
 6. Onboarding — first day, week, 90 days, buddy, checklists. If a documented onboarding process
-   exists (for example one written with the `onboarding-process-docs` skill), link it and
+   exists (for example one written with the `onboarding-process` skill), link it and
    summarise; don't restate it.
 7. Time off and leave **(legal)** — PTO, sick, parental, bereavement, unpaid, holidays
 8. Compensation **(legal)** — how pay is set, bands or philosophy, review cadence, transparency,

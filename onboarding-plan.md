@@ -32,7 +32,7 @@ work: a file, a folder, a link to a wiki or Drive page, or a knowledge base in a
 Ask once, in one line.
 
 While waiting, or if the user points you somewhere, search what you can reach: Effy AI's
-knowledge documents if the Effy AI connector is available (that is where `onboarding-process-docs`
+knowledge documents if the Effy AI connector is available (that is where `onboarding-process`
 offers to store it), connected folders, and connected drives and wikis (Google Drive, Notion,
 Confluence, SharePoint). Identify the document by content, not by name:
 it describes the onboarding process end to end, split by owner, and names the tools the process
@@ -56,12 +56,12 @@ If the user says there is no documented process, or nothing qualifies after they
 to where it should be, stop and get it written first — don't build the plan on top of a gap.
 
 - Tell the user in one line that the plan needs a documented process, and offer to create it now
-  with the `onboarding-process-docs` skill (about 15–20 minutes: it reconstructs how onboarding
+  with the `onboarding-process` skill (about 15–20 minutes: it reconstructs how onboarding
   actually runs from email, calendar and task tools plus a short interview).
-- On a yes, invoke `onboarding-process-docs` and run it to the end. When the process document
+- On a yes, invoke `onboarding-process` and run it to the end. When the process document
   exists, come back to Step 1, read it, and continue to Step 2.
 - If the skill isn't available in this environment, tell the user to install or run
-  `onboarding-process-docs` themselves, then re-run this skill.
+  `onboarding-process` themselves, then re-run this skill.
 
 Don't try to do that skill's job inline — a per-hire plan derived from nothing is guesswork with
 a due date attached.

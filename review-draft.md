@@ -1,6 +1,6 @@
 # Draft a performance review
 
-**Performance review draft** (`performance_review_draft`)  
+**Performance review draft** (`review_draft`)  
 Draft any review in the cycle — your self-review, a review of a direct report, an upward review of
 your manager, or a peer review — from your own meeting history and tools. Every claim tied to a
 citation, gaps flagged instead of filled. Run once per review.

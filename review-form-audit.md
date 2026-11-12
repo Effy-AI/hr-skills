@@ -1,9 +1,9 @@
 ---
-name: review-form-optimizer
+name: review-form-audit
 description: "Audit and rewrite performance or 360 review forms (peer, upward, self, manager) from the current form plus a CSV of last cycle's answers: answer-quality stats, clearer wording, max 15 questions per form, past vs new question tables. Use when anyone wants to improve, redesign or benchmark review questions, even if they only say 'our reviews are useless'."
 ---
 
-# Review Form Optimizer
+# Review form audit
 
 Turns a company's current review form(s) and last cycle's answers into a short report. The report shows how useful the answers were and gives a rewritten form: **Past question | New question**, one table per distinct form. It was built from a real engagement: a 300-person company, 16,500 360 answers, compared against four other companies' review exports.
 
