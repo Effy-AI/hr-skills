@@ -1,7 +1,7 @@
 # Build the HR context for AI
 
 **HR context files setup** (`hr_context`)  
-Build the folder structure, context files, and logs that future AI sessions run on — assembled from what can be verified about your company, not a generic template.
+Builds the context files and logs future AI sessions run on, from what can be verified about your company.
 
 Build a small set of documents that lets any future AI session — a chat, a project, an agent,
 another skill in this plugin — start with the company's HR already understood: how it's
@@ -20,8 +20,6 @@ because the natural assumption is that you're about to copy their HRIS:
 - Policies and templates are **linked, never copied**. There's one master of each document, and
   it isn't here.
 - It's what lets every later AI session skip the "let me explain our company" part.
-
-The document set, templates and review prompt are in the **Document set** section at the end — use it in Step 3.
 
 ## Step 0 — Where it will live
 
@@ -75,7 +73,7 @@ and what it rests on, and which ones are new versus updates. Wait for a yes.
 
 ## Step 3 — Build the documents
 
-Use the set and templates in the **Document set** section below: the workspace map, the AI usage rules
+Use the set and templates at the end of this file: the workspace map, the AI usage rules
 pointer, `company/` facts, one `processes/` document per process actually run, and the two logs.
 Build only what the evidence and interview support — a process the company doesn't run gets no
 document, and a section with nothing real in it is left out, not padded.
@@ -104,7 +102,7 @@ Show the final list of documents to be created or updated, then save after an ex
   so they sort and read as a workspace: `HR context — README`, `HR context — company/org-basics`,
   `HR context — processes/review-cycle`, and so on. Search first and update a matching document
   rather than creating a second. Logs are documents too, so corrections stay with the context.
-- **To a folder** — the same set as markdown files in the structure from the **Document set** section, with a
+- **To a folder** — the same set as markdown files in the structure below, with a
   `README.md` in every folder.
 
 Then add the first line to the context log: today's date, what was created.
@@ -118,7 +116,7 @@ Offer each in one line; build only on a yes.
   instructions to paste, what to upload each cycle, and 3–5 facts for the project's memory. One
   room per job, never one giant "HR" project — mixed context degrades every task it touches.
 - **Weekly context review** — a scheduled task that reads the logs and recent outputs and proposes
-  fixes. The prompt is in the **Document set** section below. It proposes; it never edits on its own.
+  fixes. The prompt is at the end of this file. It proposes; it never edits on its own.
 
 ## Finish
 
