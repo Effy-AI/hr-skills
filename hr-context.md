@@ -29,10 +29,7 @@ Check what's connected, then recommend one home (the two can be combined):
 
 - **Effy AI knowledge** — if the Effy AI connector is available, recommend this. Each document
   becomes a knowledge document that Effy's agents and the other skills in this plugin read
-  automatically, so the context works in every session without anyone attaching files. If the
-  user uses Effy but the connector isn't connected, say so in one line: it's added in Claude's
-  connector settings with `https://go.effy.ai/mcp` (on Team or Enterprise plans an admin enables
-  it).
+  automatically, so the context works in every session without anyone attaching files.
 - **A shared folder** — a connected local folder (suggest the name `HR-CONTEXT-FOR-AI`), a drive
   folder, or a wiki space. Use this when there's no Effy, or as well as Effy if the user wants
   files they can open.
